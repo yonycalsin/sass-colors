@@ -1,11 +1,18 @@
 {
    "name": "sass-colors",
-   "version": "1.0.0",
-   "description": "Variables of colors for sass",
+   "version": "1.0.1",
+   "description": "🎨 Sass-colors 🌐 is a scss library, which adds modern colors.",
    "scripts": {
       "dev": "node-sass --watch src -o dist/css --output-style expanded"
    },
-   "keywords": [],
+   "keywords": [
+      "sass-colors",
+      "colors",
+      "variables colors",
+      "html colors",
+      "css colors",
+      "modern colors"
+   ],
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
    "license": "ISC",
    "repository": {
