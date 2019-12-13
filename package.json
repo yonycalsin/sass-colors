@@ -1,0 +1,18 @@
+{
+   "name": "sass-colors",
+   "version": "1.0.0",
+   "description": "Variables of colors for sass",
+   "scripts": {
+      "start": ""
+   },
+   "keywords": [],
+   "author": "Yoni Calsin <helloyonicb@gmail.com>",
+   "license": "ISC",
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/yonicb/sass-colors"
+   },
+   "devDependencies": {
+      "node-sass": "^4.13.0"
+   }
+}
