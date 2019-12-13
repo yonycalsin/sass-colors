@@ -1,138 +1,3 @@
-<p align="center">
-  <a href="https://github.com/yonicb/sass-colors" target="blank"><img src="https://i.ibb.co/b596wMs/sass-colors.png" width="120" alt="Sass-colors Logo" /></a>
-</p>
-
-<p align="center">
-🎨 Sass-colors 🌐 is a scss library, which adds modern colors.
-</p>
-<p align="center" style="max-width: 450px; margin: auto;">
-   <a href="https://github.com/yonicb/sass-colors"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
-   <a href="https://www.npmjs.com/sass-colors" target="_blank">
-   <img src="https://img.shields.io/npm/v/sass-colors" alt="NPM Version" /></a>
-   <a href="https://www.npmjs.com/sass-colors" target="_blank">
-   <img src="https://img.shields.io/npm/l/sass-colors" alt="Package License" /></a>
-   <a href="https://www.npmjs.com/sass-colors" target="_blank">
-   <img src="https://img.shields.io/npm/dm/sass-colors" alt="NPM Downloads" /></a>
-   <a href="https://github.com/yonicb/sass-colors" target="_blank">
-   <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
-   <a href="https://github.com/yonicb/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass-colors-yellow?style=flat-square&logo=github" /></a>
-   <a href="https://github.com/yonicb"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
-   <a href="https://twitter.com/yonicb" target="_blank">
-   <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
-</p>
-
-## 🌐 Description
-
-<p>
-Under the hood, sass-colors uses scss/sass, but also provides compatibility with a wide range of other libraries, such as Eg ReactJs, Vuejs, Angular, which allows easy use of the countless third-party add-ons that are available!
-</p>
-
-
-## 📦 Installation
-<p>
-To start using Sass-colors you need to install it with the package manager npm or yarn, as shown in the next section or download it directly!
-</p>
-
-``` ts
-// To install using npm
-npm install sass-colors -S
-
-// To install using yarn
-yarn add sass-colors
-```
-
-<!-- ## Getting started -->
-## ▶️ Getting started
-<p>
-To use the beautiful colors of sass-colors is very simple, first we will import the colors.scss file that contains the colors. Example:
-</p>
-
-```scss
-// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
-
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-```
-<p>
-As you can see we already import correctly!
-Sass-Colors includes a function that adds selection a color and its secondary color, for example:
-</p>
-
-```scss
-@import "src/colors.scss";
-
-body {
-   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
-   background: Color("red", "base");
-}
-```
-
-```scss
-// I will explain more clearly!
-// First we import this color map for this example.
-
-/**
-| Main Color | Color value |
-**/
-$deep-red: (
-  "base":       #e51c23,
-  "lighten-5":  #fdeaeb,
-  "lighten-4":  #f8c1c3,
-  "lighten-3":  #f3989b,
-  "lighten-2":  #ee6e73,
-  "lighten-1":  #ea454b,
-  "darken-1":   #d0181e,
-  "darken-2":   #b9151b,
-  "darken-3":   #a21318,
-  "darken-4":   #8b1014,
-);
-// When you execute the function that requires two parameters
-/**
-Color ($primary-color, $secondary-color)
-**/
-
-```
-
-
-## 🎨 Colors
-
-| N°  | Name |
-| --- |  -- |
-| 1   | deep-red |
-| 2   | red |
-| 3   | pink |
-| 4   | purple |
-| 5   | deep-purple |
-| 6   | indigo |
-| 7   | blue |
-| 8   | light-blue |
-| 9   | cyan |
-| 10   | teal |
-| 11  | green |
-| 12  | light-green |
-| 13  | lime |
-| 15  | yellow |
-| 16  | amber |
-| 17  | orange |
-| 18  | deep-orange |
-| 19  | brown |
-| 20  | blue-grey |
-| 21  | grey |
-
-# 🎨 Shades
-
-| N°  | Name |
-| - | - 
-| 22  | black |
-| 23  | white |
-| 24  | transparent |
-
-
-
-#### 📚 Deep Red Colors
-Example:
-```scss
 /**
 *  Deep Red Colors
 **/
@@ -148,10 +13,7 @@ $deep-red: (
   "darken-3":   #a21318,
   "darken-4":   #8b1014,
 );
-```
-#### 📚 Red Colors
-Example:
-```scss
+
 /**
 *  Red Colors
 **/
@@ -171,11 +33,8 @@ $red: (
   "accent-3":    #FF1744,
   "accent-4":    #D50000
 );
-```
 
-#### 📚 Pink Colors
-Example:
-```scss
+
 /**
 *  Pink Colors
 **/
@@ -195,11 +54,7 @@ $pink: (
   "accent-3":    #f50057,
   "accent-4":    #c51162
 );
-```
 
-#### 📚 Purple Colors
-Example:
-```scss
 /**
 *  Purple Colors
 **/
@@ -219,11 +74,7 @@ $purple: (
   "accent-3":    #d500f9,
   "accent-4":    #aa00ff
 );
-```
 
-#### 📚 Deep Purple Colors
-Example:
-```scss
 /**
 *  Deep Purple Colors
 **/
@@ -243,11 +94,7 @@ $deep-purple: (
   "accent-3":    #651fff,
   "accent-4":    #6200ea
 );
-```
 
-#### 📚 Indigo Colors
-Example:
-```scss
 /**
 *  Indigo Colors
 **/
@@ -267,11 +114,7 @@ $indigo: (
   "accent-3":    #3d5afe,
   "accent-4":    #304ffe
 );
-```
 
-#### 📚 Blue Colors
-Example:
-```scss
 /**
 *  Blue Colors
 **/
@@ -291,11 +134,7 @@ $blue: (
   "accent-3":    #2979FF,
   "accent-4":    #2962FF
 );
-```
 
-#### 📚 Light Blue Colors
-Example:
-```scss
 /**
 *  Light Blue Colors
 **/
@@ -315,11 +154,7 @@ $light-blue: (
   "accent-3":    #00b0ff,
   "accent-4":    #0091ea
 );
-```
 
-#### 📚 Cyan Colors
-Example:
-```scss
 /**
 *  Cyan Colors
 **/
@@ -339,12 +174,7 @@ $cyan: (
   "accent-3":    #00e5ff,
   "accent-4":    #00b8d4
 );
-```
 
-
-#### 📚 Teal Colors
-Example:
-```scss
 /**
 *  Teal Colors
 **/
@@ -364,11 +194,7 @@ $teal: (
   "accent-3":    #1de9b6,
   "accent-4":    #00bfa5
 );
-```
 
-#### 📚 Green Colors
-Example:
-```scss
 /**
 *  Green Colors
 **/
@@ -388,11 +214,7 @@ $green: (
   "accent-3":    #00E676,
   "accent-4":    #00C853
 );
-```
 
-#### 📚 Light Green Colors
-Example:
-```scss
 /**
 *  Light Green Colors
 **/
@@ -412,11 +234,7 @@ $light-green: (
   "accent-3":    #76ff03,
   "accent-4":    #64dd17
 );
-```
 
-#### 📚 Lime Colors
-Example:
-```scss
 /**
 *  Lime Colors
 **/
@@ -436,12 +254,7 @@ $lime: (
   "accent-3":    #c6ff00,
   "accent-4":    #aeea00
 );
-```
 
-
-#### 📚 Yellow Colors
-Example:
-```scss
 /**
 *  Yellow Colors
 **/
@@ -461,11 +274,7 @@ $yellow: (
   "accent-3":    #ffea00,
   "accent-4":    #ffd600
 );
-```
 
-#### 📚 Amber Colors
-Example:
-```scss
 /**
 *  Amber Colors
 **/
@@ -485,11 +294,7 @@ $amber: (
   "accent-3":    #ffc400,
   "accent-4":    #ffab00
 );
-```
 
-#### 📚 Orange Colors
-Example:
-```scss
 /**
 *  Orange Colors
 **/
@@ -509,11 +314,7 @@ $orange: (
   "accent-3":    #ff9100,
   "accent-4":    #ff6d00
 );
-```
 
-#### 📚 Deep Orange Colors
-Example:
-```scss
 /**
 *  Deep Orange Colors
 **/
@@ -533,11 +334,7 @@ $deep-orange: (
   "accent-3":    #ff3d00,
   "accent-4":    #dd2c00
 );
-```
 
-#### 📚 Brown Colors
-Example:
-```scss
 /**
 *  Brown Colors
 **/
@@ -553,11 +350,7 @@ $brown: (
   "darken-3":   #4e342e,
   "darken-4":   #3e2723
 );
-```
 
-#### 📚 Blue Grey Colors
-Example:
-```scss
 /**
 *  Blue Grey Colors
 **/
@@ -573,11 +366,7 @@ $blue-grey: (
   "darken-3":   #37474f,
   "darken-4":   #263238
 );
-```
 
-#### 📚 Grey Colors
-Example:
-```scss
 /**
 *  Grey Colors
 **/
@@ -593,11 +382,7 @@ $grey: (
   "darken-3":   #424242,
   "darken-4":   #212121
 );
-```
 
-#### 📚 Shades Colors
-Example:
-```scss
 /**
 *  Shades Colors
 **/
@@ -606,26 +391,45 @@ $shades: (
   "white":        #FFFFFF,
   "transparent":  transparent
 );
-```
+
+/**
+*  All Colors
+**/
+$colors: (
+  "deep-red": $deep-red,
+  "red": $red,
+  "pink": $pink,
+  "purple": $purple,
+  "deep-purple": $deep-purple,
+  "indigo": $indigo,
+  "blue": $blue,
+  "light-blue": $light-blue,
+  "cyan": $cyan,
+  "teal": $teal,
+  "green": $green,
+  "light-green": $light-green,
+  "lime": $lime,
+  "yellow": $yellow,
+  "amber": $amber,
+  "orange": $orange,
+  "deep-orange": $deep-orange,
+  "brown": $brown,
+  "blue-grey": $blue-grey,
+  "grey": $grey,
+  "shades": $shades
+) !default;
 
 
-## ⭐ Support for
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
 
-Sass-colors is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
-
-## 🎩 Contributors
-
-<p>
-
-[<img src="https://avatars0.githubusercontent.com/u/58490737?s=400&v=4" alt="Yoni Stack" width="50" style="background: #fff; padding: 5px; border-radius: 50%;" />](https://github.com/yonicb)
-
-</p>
-
-## 🎩 Stay in touch
-
-* Author [Yoni Calsin](https://github.com/yonicb)
-* Twitter [Yoni Calsin](https://twitter.com/yonicalsin)
-
-## 📜 License
-
-Sass-colors is [MIT licensed](LICENSE).
+@function color($color, $type) {
+   @if map-has-key($colors, $color) {
+      $curr_color: map-get($colors, $color);
+      @if map-has-key($curr_color, $type) {
+         @return map-get($curr_color, $type);
+      }
+   }
+   @warn "Unknown `#{$color}` - `#{$type}` in $colors.";
+   @return null;
+}

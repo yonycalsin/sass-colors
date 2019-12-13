@@ -3,7 +3,7 @@
    "version": "1.0.0",
    "description": "Variables of colors for sass",
    "scripts": {
-      "start": ""
+      "dev": "node-sass --watch src -o dist/css --output-style expanded"
    },
    "keywords": [],
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
