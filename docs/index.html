@@ -1,0 +1,222 @@
+<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>Documentation - Sass-colors</title> <link rel="stylesheet" href="./index.css"> </head><body class="fadeIn"> <header class="fadeInDown"> <div class="container"> <div class="fx"> <img src="https://i.ibb.co/b596wMs/sass-colors.png" class="logo"> <h1>Sass-colors</h1> </div><div class="socials"> <a href="http://twitter.com/yonicalsin" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/733/733579.png" alt="Twitter Logo"> </a> <a href="https://github.com/yonicb" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/37/37318.png" alt="Github Logo"> </a> <a href="https://www.instagram.com/yoni_calsin/" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="Instagram Logo"> </a> <a href="https://www.linkedin.com/in/yonicb/" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="Linkedin Logo"> </a> <a href="https://www.npmjs.com/~yonicb" target="_blank"> <img src="https://static.npmjs.com/c426a1116301d1fd178c51522484127a.png" alt="Npm Logo"> </a> <a href="https://www.facebook.com/yonicb.official" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/174/174848.png" alt="Facebook Logo"> </a> </div></div></header> <main> <div class="container"> <h1 align="center">SASS-COLORS</h1> <p align="center"> 🎨 Sass-colors 🌐 is a scss library, which adds modern colors. </p><p align="center" style="max-width: 450px; margin: auto;"> <a href="https://github.com/yonicb/sass-colors"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github"/></a> <a href="https://www.npmjs.com/sass-colors" target="_blank"> <img src="https://img.shields.io/npm/v/sass-colors" alt="NPM Version"/></a> <a href="https://www.npmjs.com/sass-colors" target="_blank"> <img src="https://img.shields.io/npm/l/sass-colors" alt="Package License"/></a> <a href="https://www.npmjs.com/sass-colors" target="_blank"> <img src="https://img.shields.io/npm/dm/sass-colors" alt="NPM Downloads"/></a> <a href="https://github.com/yonicb/sass-colors" target="_blank"> <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage"/></a> <a href="https://github.com/yonicb/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass-colors-yellow?style=flat-square&logo=github"/></a> <a href="https://github.com/yonicb"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor"/></a> <a href="https://twitter.com/yonicb" target="_blank"> <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a> </p><div class="fx" id="show-colors"> </div><h2>🌐 Description</h2> <p> Under the hood, sass-colors uses scss/sass, but also provides compatibility with a wide range of other libraries, such as Eg ReactJs, Vuejs, Angular, which allows easy use of the countless third-party add-ons that are available! </p><h2>📦 Installation</h2> <p> To start using Sass-colors you need to install it with the package manager npm or yarn, as shown in the next section or download it directly! </p><pre><code class="language-javascript">// To install using npm
+npm install sass-colors -S
+
+// To install using yarn
+yarn add sass-colors
+                </code></pre> <h2>▶️ Getting started</h2> <p> To use the beautiful colors of sass-colors is very simple, first we will import the colors.scss file that contains the colors. Example: </p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre> <p> As you can see we already import correctly! Sass-Colors includes a function that adds selection a color and its secondary color, for example: </p><pre><code class="language-scss">@import "src/colors.scss";
+                
+body {
+   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
+   background: Color("red", "base");
+}
+                </code></pre> <pre><code class="language-scss">// I will explain more clearly!
+// First we import this color map for this example.
+
+/**
+| Main Color | Color value |
+**/
+$deep-red: (
+   "base":       #e51c23,
+   "lighten-5":  #fdeaeb,
+   "lighten-4":  #f8c1c3,
+   "lighten-3":  #f3989b,
+   "lighten-2":  #ee6e73,
+   "lighten-1":  #ea454b,
+   "darken-1":   #d0181e,
+   "darken-2":   #b9151b,
+   "darken-3":   #a21318,
+   "darken-4":   #8b1014,
+);
+// When you execute the function that requires two parameters
+/**
+Color ($primary-color, $secondary-color)
+**/</code></pre> <h2>🎨 Colors</h2> <table> <tr> <th> N° </th> <th> Name </th> </tr><tr> <td> 1 </td><td> deep-red </td></tr><tr> <td> 2 </td><td> red </td></tr><tr> <td> 3 </td><td> pink </td></tr><tr> <td> 4 </td><td> purple </td></tr><tr> <td> 5 </td><td> deep-purple </td></tr><tr> <td> 6 </td><td> indigo </td></tr><tr> <td> 7 </td><td> blue </td></tr><tr> <td> 8 </td><td> light-blue </td></tr><tr> <td> 9 </td><td> cyan </td></tr><tr> <td> 10 </td><td> teal </td></tr><tr> <td> 11 </td><td> green </td></tr><tr> <td> 12 </td><td> light-green </td></tr><tr> <td> 13 </td><td> lime </td></tr><tr> <td> 15 </td><td> yellow </td></tr><tr> <td> 16 </td><td> amber </td></tr><tr> <td> 17 </td><td> orange </td></tr><tr> <td> 18 </td><td> deep-orange </td></tr><tr> <td> 19 </td><td> brown </td></tr><tr> <td> 20 </td><td> blue-grey </td></tr><tr> <td> 21 </td><td> grey </td></tr></table> </p><h2>🎨 Shades</h2> <table> <tr> <th>N°</th> <th>Name</th> </tr><tr> <td>22</td><td>black</td></tr><tr> <td>23</td><td>white</td></tr><tr> <td>24</td><td>transparent</td></tr></table> <p> <ol> <li>black </li><li>white </li><li>transparent </li></ol> </p><h4>📚 Deep Red Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
+*  Deep Red Colors
+**/
+$deep-red: (
+   "base":       #e51c23,
+   "lighten-5":  #fdeaeb,
+   "lighten-4":  #f8c1c3,
+   "lighten-3":  #f3989b,
+   "lighten-2":  #ee6e73,
+   "lighten-1":  #ea454b,
+   "darken-1":   #d0181e,
+   "darken-2":   #b9151b,
+   "darken-3":   #a21318,
+   "darken-4":   #8b1014,
+);</code></pre> <h4>📚 Red Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
+*  Red Colors
+**/
+$red: (
+   "base":       #F44336,
+   "lighten-5":  #FFEBEE,
+   "lighten-4":  #FFCDD2,
+   "lighten-3":  #EF9A9A,
+   "lighten-2":  #E57373,
+   "lighten-1":  #EF5350,
+   "darken-1":   #E53935,
+   "darken-2":   #D32F2F,
+   "darken-3":   #C62828,
+   "darken-4":   #B71C1C,
+   "accent-1":    #FF8A80,
+   "accent-2":    #FF5252,
+   "accent-3":    #FF1744,
+   "accent-4":    #D50000
+);</code></pre> <h4>📚 Pink Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
+*  Pink Colors
+**/
+$pink: (
+   "base":       #e91e63,
+   "lighten-5":  #fce4ec,
+   "lighten-4":  #f8bbd0,
+   "lighten-3":  #f48fb1,
+   "lighten-2":  #f06292,
+   "lighten-1":  #ec407a,
+   "darken-1":   #d81b60,
+   "darken-2":   #c2185b,
+   "darken-3":   #ad1457,
+   "darken-4":   #880e4f,
+   "accent-1":    #ff80ab,
+   "accent-2":    #ff4081,
+   "accent-3":    #f50057,
+   "accent-4":    #c51162
+);</code></pre> <h4>📚 Purple Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
+*  Purple Colors
+**/
+$purple: (
+   "base":       #9c27b0,
+   "lighten-5":  #f3e5f5,
+   "lighten-4":  #e1bee7,
+   "lighten-3":  #ce93d8,
+   "lighten-2":  #ba68c8,
+   "lighten-1":  #ab47bc,
+   "darken-1":   #8e24aa,
+   "darken-2":   #7b1fa2,
+   "darken-3":   #6a1b9a,
+   "darken-4":   #4a148c,
+   "accent-1":    #ea80fc,
+   "accent-2":    #e040fb,
+   "accent-3":    #d500f9,
+   "accent-4":    #aa00ff
+);</code></pre> <h4>📚 Deep Purple Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
+*  Deep Purple Colors
+**/
+$deep-purple: (
+   "base":       #673ab7,
+   "lighten-5":  #ede7f6,
+   "lighten-4":  #d1c4e9,
+   "lighten-3":  #b39ddb,
+   "lighten-2":  #9575cd,
+   "lighten-1":  #7e57c2,
+   "darken-1":   #5e35b1,
+   "darken-2":   #512da8,
+   "darken-3":   #4527a0,
+   "darken-4":   #311b92,
+   "accent-1":    #b388ff,
+   "accent-2":    #7c4dff,
+   "accent-3":    #651fff,
+   "accent-4":    #6200ea
+);</code></pre> <h4>📚 Indigo Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
+*  Indigo Colors
+**/
+$indigo: (
+   "base":       #3f51b5,
+   "lighten-5":  #e8eaf6,
+   "lighten-4":  #c5cae9,
+   "lighten-3":  #9fa8da,
+   "lighten-2":  #7986cb,
+   "lighten-1":  #5c6bc0,
+   "darken-1":   #3949ab,
+   "darken-2":   #303f9f,
+   "darken-3":   #283593,
+   "darken-4":   #1a237e,
+   "accent-1":    #8c9eff,
+   "accent-2":    #536dfe,
+   "accent-3":    #3d5afe,
+   "accent-4":    #304ffe
+);</code></pre> <h4>📚 Blue Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>0 <h4>📚 Light Blue Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>1 <h4>📚 Cyan Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>2 <h4>📚 Teal Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>3 <h4>📚 Green Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>4 <h4>📚 Light Green Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>5 <h4>📚 Lime Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>6 <h4>📚 Yellow Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>7 <h4>📚 Amber Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>8 <h4>📚 Orange Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
+@import "sass-colors/src/colors.scss";
+
+// You can also download it directly and import the file colors.scss, as follows
+@import "src/colors.scss";
+                </code></pre>9 <h4>📚 Deep Orange Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
+                
+body {
+   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
+   background: Color("red", "base");
+}
+                </code></pre>0 <h4>📚 Brown Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
+                
+body {
+   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
+   background: Color("red", "base");
+}
+                </code></pre>1 <h4>📚 Blue Grey Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
+                
+body {
+   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
+   background: Color("red", "base");
+}
+                </code></pre>2 <h4>📚 Grey Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
+                
+body {
+   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
+   background: Color("red", "base");
+}
+                </code></pre>3 <h4>📚 Shades Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
+                
+body {
+   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
+   background: Color("red", "base");
+}
+                </code></pre>4 <h2>⭐ Support for</h2> <p>Sass-colors is an open source project licensed by <a href="LICENSE">MIT</a>. You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, <a href="mailto:helloyonicb@gmail.com">contact me here</a>.</p><h2>🎩 Contributors</h2> <p class="contributors"> <a href="https://github.com/yonicb"><img src="https://avatars0.githubusercontent.com/u/58490737?s=400&v=4" alt="Yoni Stack" width="50" style="background: #fff; padding: 5px; border-radius: 50%;"/></a> </p><h2>🎩 Stay in touch</h2> <ul> <li>Author <a href="https://github.com/yonicb">Yoni Calsin</a></li><li>Twitter <a href="https://twitter.com/yonicalsin">Yoni Calsin</a></li></ul> <h2>📜 License</h2> <p>Sass-colors is <a href="https://github.com/yonicb/sass-colors/blob/master/LICENSE">MIT licensed</a>.</p></div></main> <script src="./index.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-scss.min.js"></script></body></html>
