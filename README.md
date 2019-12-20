@@ -608,7 +608,6 @@ $shades: (
 );
 ```
 
-
 ## ⭐ Support for
 
 Sass-colors is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
