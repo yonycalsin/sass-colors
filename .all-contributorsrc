@@ -1,0 +1,24 @@
+{
+  "projectName": "sass-colors",
+  "projectOwner": "sass-colors",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 70,
+  "commit": true,
+  "commitConvention": "none",
+  "contributors": [
+    {
+      "login": "yonicb",
+      "name": "Yoni Calsin",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/58490737?v=4",
+      "profile": "https://twitter.com/yonicalsin",
+      "contributions": [
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
