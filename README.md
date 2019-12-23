@@ -1,7 +1,4 @@
 <p align="center">
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
   <a href="https://github.com/yonicb/sass-colors" target="blank"><img src="https://i.ibb.co/b596wMs/sass-colors.png" width="120" alt="Sass-colors Logo" /></a>
 </p>
 
@@ -9,6 +6,9 @@
 🎨 Sass-colors 🌐 is a scss library, which adds modern colors.
 </p>
 <p align="center" style="max-width: 450px; margin: auto;">
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+   <a href="https://github.com/yonicb/sass-colors" title="All Contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" /></a>
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
    <a href="https://github.com/yonicb/sass-colors"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
    <a href="https://www.npmjs.com/sass-colors" target="_blank">
    <img src="https://img.shields.io/npm/v/sass-colors" alt="NPM Version" /></a>
@@ -615,13 +615,6 @@ $shades: (
 
 Sass-colors is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
 
-## 🎩 Contributors
-
-<p>
-
-[<img src="https://avatars0.githubusercontent.com/u/58490737?s=400&v=4" alt="Yoni Stack" width="50" style="background: #fff; padding: 5px; border-radius: 50%;" />](https://github.com/yonicb)
-
-</p>
 
 ## 🎩 Stay in touch
 
@@ -640,7 +633,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://twitter.com/yonicalsin"><img src="https://avatars0.githubusercontent.com/u/58490737?v=4" width="70px;" alt=""/><br /><sub><b>Yoni Calsin</b></sub></a><br /><a href="https://github.com/sass-colors/sass-colors/commits?author=yonicb" title="Code">💻</a></td>
+    <td align="center"><a href="https://twitter.com/yonicalsin"><img src="https://avatars0.githubusercontent.com/u/58490737?v=4" width="70px;" alt=""/><br /><sub><b>Yoni Calsin</b></sub></a><br /><a href="https://github.com/sass-colors/sass-colors/commits?author=yonicb" title="Code">💻</a> <a href="https://github.com/sass-colors/sass-colors/issues?q=author%3Ayonicb" title="Bug reports">🐛</a> <a href="https://github.com/sass-colors/sass-colors/commits?author=yonicb" title="Documentation">📖</a> <a href="#blog-yonicb" title="Blogposts">📝</a></td>
   </tr>
 </table>
 
