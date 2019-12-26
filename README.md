@@ -18,7 +18,7 @@
    <img src="https://img.shields.io/npm/dm/sass-colors" alt="NPM Downloads" /></a>
    <a href="https://github.com/yonicb/sass-colors" target="_blank">
    <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
-   <a href="https://github.com/yonicb/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass-colors-yellow?style=flat-square&logo=github" /></a>
+   <a href="https://github.com/yonicb/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass.colors-yellow?style=flat-square&logo=github" /></a>
    <a href="https://github.com/yonicb"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
    <a href="https://twitter.com/yonicb" target="_blank">
    <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
