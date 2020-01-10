@@ -77,7 +77,7 @@ Sass-Colors includes a function that adds selection a color and its secondary co
 
 body {
    // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
-   background: Color("red", "base");
+   background: color("red", "base");
 }
 ```
 
@@ -102,7 +102,7 @@ $deep-red: (
 );
 // When you execute the function that requires two parameters
 /**
-Color ($primary-color, $secondary-color)
+color($primary-color, $secondary-color)
 **/
 
 ```
@@ -110,60 +110,67 @@ Color ($primary-color, $secondary-color)
 
 ## 🎨 Colors
 
-| N°  | Name |
-| --- |  -- |
-| 1   | deep-red |
-| 2   | red |
-| 3   | pink |
-| 4   | purple |
-| 5   | deep-purple |
-| 6   | indigo |
-| 7   | blue |
-| 8   | light-blue |
-| 9   | cyan |
-| 10   | teal |
-| 11  | green |
-| 12  | light-green |
-| 13  | lime |
-| 15  | yellow |
-| 16  | amber |
-| 17  | orange |
-| 18  | deep-orange |
-| 19  | brown |
-| 20  | blue-grey |
-| 21  | grey |
+| N° | Name        |
+|----|-------------|
+| 1  | deep-red    |
+| 2  | red         |
+| 3  | pink        |
+| 4  | purple      |
+| 5  | deep-purple |
+| 6  | indigo      |
+| 7  | blue        |
+| 8  | light-blue  |
+| 9  | cyan        |
+| 10 | teal        |
+| 11 | green       |
+| 12 | light-green |
+| 13 | lime        |
+| 15 | yellow      |
+| 16 | amber       |
+| 17 | orange      |
+| 18 | deep-orange |
+| 19 | brown       |
+| 20 | blue-grey   |
+| 21 | grey        |
 
 # 🎨 Shades
 
-| N°  | Name |
-| - | - 
-| 22  | black |
-| 23  | white |
-| 24  | transparent |
+| N° | Name        |
+|----|-------------|
+| 22 | black       |
+| 23 | white       |
+| 24 | transparent |
 
 
 
-#### 📚 Deep Red Colors
-Example:
-```scss
-/**
-*  Deep Red Colors
-**/
-$deep-red: (
-  "base":       #e51c23,
-  "lighten-5":  #fdeaeb,
-  "lighten-4":  #f8c1c3,
-  "lighten-3":  #f3989b,
-  "lighten-2":  #ee6e73,
-  "lighten-1":  #ea454b,
-  "darken-1":   #d0181e,
-  "darken-2":   #b9151b,
-  "darken-3":   #a21318,
-  "darken-4":   #8b1014,
-);
-```
-#### 📚 Red Colors
-Example:
+<details>
+  <summary>Show Deep Red Colors </summary>
+
+## 📚 Deep Red Colors
+  ```scss
+  /**
+  *  Deep Red Colors
+  **/
+  $deep-red: (
+    "base":       #e51c23,
+    "lighten-5":  #fdeaeb,
+    "lighten-4":  #f8c1c3,
+    "lighten-3":  #f3989b,
+    "lighten-2":  #ee6e73,
+    "lighten-1":  #ea454b,
+    "darken-1":   #d0181e,
+    "darken-2":   #b9151b,
+    "darken-3":   #a21318,
+    "darken-4":   #8b1014,
+  );
+  ```
+</details>
+
+<details>
+  <summary>Show Red Colors</summary>
+  
+  ## 📚 Red Colors
+
 ```scss
 /**
 *  Red Colors
@@ -185,8 +192,13 @@ $red: (
   "accent-4":    #D50000
 );
 ```
+</details>
 
-#### 📚 Pink Colors
+
+<details>
+  <summary>Show Pink Colors</summary>
+
+## 📚 Pink Colors
 Example:
 ```scss
 /**
@@ -209,8 +221,16 @@ $pink: (
   "accent-4":    #c51162
 );
 ```
+  
+</details>
 
-#### 📚 Purple Colors
+
+
+
+<details>
+  <summary>Show Purple Colors</summary>
+
+## 📚 Purple Colors
 Example:
 ```scss
 /**
@@ -233,8 +253,13 @@ $purple: (
   "accent-4":    #aa00ff
 );
 ```
+  
+</details>
 
-#### 📚 Deep Purple Colors
+<details>
+  <summary>Show Deep Purple Colors</summary>
+
+## 📚 Deep Purple Colors
 Example:
 ```scss
 /**
@@ -257,8 +282,14 @@ $deep-purple: (
   "accent-4":    #6200ea
 );
 ```
+  
+</details>
 
-#### 📚 Indigo Colors
+
+<details>
+  <summary>Show Indigo Colors</summary>
+
+## 📚 Indigo Colors
 Example:
 ```scss
 /**
@@ -281,8 +312,14 @@ $indigo: (
   "accent-4":    #304ffe
 );
 ```
+  
+</details>
 
-#### 📚 Blue Colors
+<details>
+  <summary>Show Blue Colors</summary>
+
+
+  ## 📚 Blue Colors
 Example:
 ```scss
 /**
@@ -305,8 +342,13 @@ $blue: (
   "accent-4":    #2962FF
 );
 ```
+</details>
 
-#### 📚 Light Blue Colors
+
+<details>
+  <summary>Show Light Blue Colors</summary>
+
+## 📚 Light Blue Colors
 Example:
 ```scss
 /**
@@ -329,8 +371,13 @@ $light-blue: (
   "accent-4":    #0091ea
 );
 ```
+  
+</details>
 
-#### 📚 Cyan Colors
+<details>
+  <summary>Show Cyan Colors</summary>
+
+## 📚 Cyan Colors
 Example:
 ```scss
 /**
@@ -353,9 +400,16 @@ $cyan: (
   "accent-4":    #00b8d4
 );
 ```
+  
+</details>
 
 
-#### 📚 Teal Colors
+
+
+<details>
+  <summary>Show Teal Colors</summary>
+
+  ## 📚 Teal Colors
 Example:
 ```scss
 /**
@@ -378,8 +432,12 @@ $teal: (
   "accent-4":    #00bfa5
 );
 ```
+</details>
 
-#### 📚 Green Colors
+<details>
+  <summary>Show Green Colors</summary>
+
+  ## 📚 Green Colors
 Example:
 ```scss
 /**
@@ -402,8 +460,12 @@ $green: (
   "accent-4":    #00C853
 );
 ```
+</details>
 
-#### 📚 Light Green Colors
+<details>
+  <summary>Show Light Green Colors</summary>
+
+## 📚 Light Green Colors
 Example:
 ```scss
 /**
@@ -426,8 +488,13 @@ $light-green: (
   "accent-4":    #64dd17
 );
 ```
+  
+</details>
 
-#### 📚 Lime Colors
+<details>
+  <summary>Show Lime Colors</summary>
+
+## 📚 Lime Colors
 Example:
 ```scss
 /**
@@ -450,9 +517,14 @@ $lime: (
   "accent-4":    #aeea00
 );
 ```
+  
+</details>
 
 
-#### 📚 Yellow Colors
+<details>
+  <summary>Show Yellow Colors</summary>
+
+## 📚 Yellow Colors
 Example:
 ```scss
 /**
@@ -476,7 +548,13 @@ $yellow: (
 );
 ```
 
-#### 📚 Amber Colors
+  
+</details>
+
+<details>
+  <summary>Show Amber Colors</summary>
+
+## 📚 Amber Colors
 Example:
 ```scss
 /**
@@ -499,8 +577,14 @@ $amber: (
   "accent-4":    #ffab00
 );
 ```
+  
+</details>
 
-#### 📚 Orange Colors
+
+<details>
+  <summary>Show Orange Colors</summary>
+  
+  ## 📚 Orange Colors
 Example:
 ```scss
 /**
@@ -523,8 +607,42 @@ $orange: (
   "accent-4":    #ff6d00
 );
 ```
+</details>
 
-#### 📚 Deep Orange Colors
+
+<details>
+  <summary>Show Orange Colors</summary>
+  
+  ## 📚 Orange Colors
+Example:
+```scss
+/**
+*  Orange Colors
+**/
+$orange: (
+  "base":       #ff9800,
+  "lighten-5":  #fff3e0,
+  "lighten-4":  #ffe0b2,
+  "lighten-3":  #ffcc80,
+  "lighten-2":  #ffb74d,
+  "lighten-1":  #ffa726,
+  "darken-1":   #fb8c00,
+  "darken-2":   #f57c00,
+  "darken-3":   #ef6c00,
+  "darken-4":   #e65100,
+  "accent-1":    #ffd180,
+  "accent-2":    #ffab40,
+  "accent-3":    #ff9100,
+  "accent-4":    #ff6d00
+);
+```
+</details>
+
+
+<details>
+  <summary>Show Deep Orange Colors</summary>
+
+  ## 📚 Deep Orange Colors
 Example:
 ```scss
 /**
@@ -547,8 +665,13 @@ $deep-orange: (
   "accent-4":    #dd2c00
 );
 ```
+</details>
 
-#### 📚 Brown Colors
+
+<details>
+  <summary>Show Brown Colors</summary>
+
+## 📚 Brown Colors
 Example:
 ```scss
 /**
@@ -567,8 +690,12 @@ $brown: (
   "darken-4":   #3e2723
 );
 ```
+</details>
 
-#### 📚 Blue Grey Colors
+<details>
+  <summary>Show Blue Grey Colors</summary>
+
+## 📚 Blue Grey Colors
 Example:
 ```scss
 /**
@@ -587,8 +714,13 @@ $blue-grey: (
   "darken-4":   #263238
 );
 ```
+</details>
 
-#### 📚 Grey Colors
+
+<details>
+  <summary>Show Grey Colors</summary>
+
+## 📚 Grey Colors
 Example:
 ```scss
 /**
@@ -607,8 +739,13 @@ $grey: (
   "darken-4":   #212121
 );
 ```
+</details>
 
-#### 📚 Shades Colors
+
+<details>
+  <summary>Show Shades Colors</summary>
+
+## 📚 Shades Colors
 Example:
 ```scss
 /**
@@ -620,6 +757,9 @@ $shades: (
   "transparent":  transparent
 );
 ```
+</details>
+
+
 
 ## ⭐ Support for
 
