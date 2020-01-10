@@ -24,6 +24,13 @@
    <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 </p>
 
+<h2 align="center">Links</h2>
+
+- 📘 [Documentation](#-documentation)
+- 🔨 [Release Notes](#release)
+- 💬 [Discord Chat](https://discord.gg)
+- 🐦 [Twitter](https://twitter.com/)
+
 ## 🎉 Demo
 <p>
 Preview live <a href="https://yonicb.github.io/sass-colors/" target="_blank">Click Here</a>
