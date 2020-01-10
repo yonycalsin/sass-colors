@@ -285,7 +285,7 @@ $purple: (
   
 </details>
 
-### ☂️ Deep Purple Colors
+### 🎨 Deep Purple Colors
 <details>
   <summary>Show Deep Purple Colors</summary>
 
