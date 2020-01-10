@@ -95,6 +95,9 @@ To use the beautiful colors of sass-colors is very simple, first we will import 
 
 // You can also download it directly and import the file colors.scss, as follows
 @import "src/colors.scss";
+
+// usage: color("name_of_color", "type_of_color")
+// to avoid to repeating map-get($colors, ...)
 ```
 <p>
 As you can see we already import correctly!
@@ -105,8 +108,16 @@ Sass-Colors includes a function that adds selection a color and its secondary co
 @import "src/colors.scss";
 
 body {
-   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
-   background: color("red", "base");
+  // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
+
+  // usage: color("name_of_color", "type_of_color")
+  // to avoid to repeating map-get($colors, ...)
+  background: color("red", "base");
+}
+.button {
+  background: color("blue", "accent-1");
+  color: white;
+  border: 1px solid color("blue", "darken-1");
 }
 ```
 
@@ -135,7 +146,6 @@ color($primary-color, $secondary-color)
 **/
 
 ```
-
 
 ## 🎨 Colors
 
