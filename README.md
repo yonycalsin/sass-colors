@@ -24,13 +24,36 @@
    <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 </p>
 
-<h2 align="center">Links</h2>
-
+- 🔨 [Demo](#-demo)
 - 📘 [Documentation](#-documentation)
-- 🔨 [Release Notes](#release)
-- 💬 [Discord Chat](https://discord.gg)
-- 🐦 [Twitter](https://twitter.com/)
-
+- 💬 [Description](#-description)
+- 🐦 [Installation](#-installation)
+- 💬 [Description](#-getting-started)
+- 🎨 [Colors](#-colors)
+  - 🔴 [Deep Red](#-deep-red-colors)
+  - 🔴 [Red](#-red-colors)
+  - 🎀 [Pink](#-pink-colors)
+  - 💜 [Purple](#-purple-colors)
+  - ☂️ [Deep Purple](#-deep-purple-colors)
+  - 🎨 [Indigo](#-indigo-colors)
+  - 📘 [Blue](#-blue-colors)
+  - 🔵 [Light Blue](#-light-blue-colors)
+  - 🎨 [Cyan](#-cyan-colors)
+  - 🎨 [Teal](#-teal-colors)
+  - 💚 [Green](#-green-colors)
+  - 🍏 [Light Green](#-light-green-colors)
+  - 🍈 [Lime](#-lime-colors)
+  - 💛 [Yellow](#-yellow-colors)
+  - 🎨 [Amber](#-amber-colors)
+  - 📙 [Orange](#-orange-colors)
+  - 🧡 [Deep Orange](#-deep-orange-colors)
+  - 🤝🏾 [Brown](#-brown-colors)
+  - 🎨 [Blue Grey](#-blue-grey-colors)
+  - 🎨 [Grey](#-grey-colors)
+  - ⚫ [Black](#-shades-colors)
+  - ⚪ [White](#-shades-colors)
+  - 🎨 [Transparent](#-shades-colors)
+  
 ## 🎉 Demo
 <p>
 Preview live <a href="https://yonicb.github.io/sass-colors/" target="_blank">Click Here</a>
@@ -61,7 +84,6 @@ npm install sass-colors -S
 yarn add sass-colors
 ```
 
-<!-- ## Getting started -->
 ## ▶️ Getting started
 <p>
 To use the beautiful colors of sass-colors is very simple, first we will import the colors.scss file that contains the colors. Example:
@@ -117,36 +139,36 @@ color($primary-color, $secondary-color)
 
 ## 🎨 Colors
 
-| N° | Name        |
-|----|-------------|
-| 1  | deep-red    |
-| 2  | red         |
-| 3  | pink        |
-| 4  | purple      |
-| 5  | deep-purple |
-| 6  | indigo      |
-| 7  | blue        |
-| 8  | light-blue  |
-| 9  | cyan        |
-| 10 | teal        |
-| 11 | green       |
-| 12 | light-green |
-| 13 | lime        |
-| 15 | yellow      |
-| 16 | amber       |
-| 17 | orange      |
-| 18 | deep-orange |
-| 19 | brown       |
-| 20 | blue-grey   |
-| 21 | grey        |
+| N° | Name        | Lighten | Darken | Accent |
+|----|-------------|---------|--------|--------|
+| 1  | deep-red    | ✔️       | ✔️      | ❌      |
+| 2  | red         | ✔️       | ✔️      | ✔️      |
+| 3  | pink        | ✔️       | ✔️      | ✔️      |
+| 4  | purple      | ✔️       | ✔️      | ✔️      |
+| 5  | deep-purple | ✔️       | ✔️      | ✔️      |
+| 6  | indigo      | ✔️       | ✔️      | ✔️      |
+| 7  | blue        | ✔️       | ✔️      | ✔️      |
+| 8  | light-blue  | ✔️       | ✔️      | ✔️      |
+| 9  | cyan        | ✔️       | ✔️      | ✔️      |
+| 10 | teal        | ✔️       | ✔️      | ✔️      |
+| 11 | green       | ✔️       | ✔️      | ✔️      |
+| 12 | light-green | ✔️       | ✔️      | ✔️      |
+| 13 | lime        | ✔️       | ✔️      | ✔️      |
+| 15 | yellow      | ✔️       | ✔️      | ✔️      |
+| 16 | amber       | ✔️       | ✔️      | ✔️      |
+| 17 | orange      | ✔️       | ✔️      | ✔️      |
+| 18 | deep-orange | ✔️       | ✔️      | ✔️      |
+| 19 | brown       | ✔️       | ✔️      | ❌      |
+| 20 | blue-grey   | ✔️       | ✔️      | ❌      |
+| 21 | grey        | ✔️       | ✔️      | ❌      |
 
-# 🎨 Shades
+## 🎨 Shades
 
-| N° | Name        |
-|----|-------------|
-| 22 | black       |
-| 23 | white       |
-| 24 | transparent |
+| N° | Name        | Ligthen | Darken | Accent |
+|----|-------------|---------|--------|--------|
+| 22 | black       | ❌       | ❌      | ❌      |
+| 23 | white       | ❌       | ❌      | ❌      |
+| 24 | transparent | ❌       | ❌      | ❌      |
 
 
 
@@ -585,35 +607,6 @@ $amber: (
 );
 ```
   
-</details>
-
-
-<details>
-  <summary>Show Orange Colors</summary>
-  
-  ## 📚 Orange Colors
-Example:
-```scss
-/**
-*  Orange Colors
-**/
-$orange: (
-  "base":       #ff9800,
-  "lighten-5":  #fff3e0,
-  "lighten-4":  #ffe0b2,
-  "lighten-3":  #ffcc80,
-  "lighten-2":  #ffb74d,
-  "lighten-1":  #ffa726,
-  "darken-1":   #fb8c00,
-  "darken-2":   #f57c00,
-  "darken-3":   #ef6c00,
-  "darken-4":   #e65100,
-  "accent-1":    #ffd180,
-  "accent-2":    #ffab40,
-  "accent-3":    #ff9100,
-  "accent-4":    #ff6d00
-);
-```
 </details>
 
 
