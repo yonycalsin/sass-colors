@@ -1,222 +1,1010 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>Documentation - Sass-colors</title> <link rel="stylesheet" href="./index.css"> </head><body class="fadeIn"> <header class="fadeInDown"> <div class="container"> <div class="fx"> <img src="https://i.ibb.co/b596wMs/sass-colors.png" class="logo"> <h1>Sass-colors</h1> </div><div class="socials"> <a href="http://twitter.com/yonicalsin" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/733/733579.png" alt="Twitter Logo"> </a> <a href="https://github.com/yonicb" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/37/37318.png" alt="Github Logo"> </a> <a href="https://www.instagram.com/yoni_calsin/" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="Instagram Logo"> </a> <a href="https://www.linkedin.com/in/yonicb/" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="Linkedin Logo"> </a> <a href="https://www.npmjs.com/~yonicb" target="_blank"> <img src="https://static.npmjs.com/c426a1116301d1fd178c51522484127a.png" alt="Npm Logo"> </a> <a href="https://www.facebook.com/yonicb.official" target="_blank"> <img src="https://image.flaticon.com/icons/png/512/174/174848.png" alt="Facebook Logo"> </a> </div></div></header> <main> <div class="container"> <h1 align="center">SASS-COLORS</h1> <p align="center"> 🎨 Sass-colors 🌐 is a scss library, which adds modern colors. </p><p align="center" style="max-width: 450px; margin: auto;"> <a href="https://github.com/yonicb/sass-colors"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github"/></a> <a href="https://www.npmjs.com/sass-colors" target="_blank"> <img src="https://img.shields.io/npm/v/sass-colors" alt="NPM Version"/></a> <a href="https://www.npmjs.com/sass-colors" target="_blank"> <img src="https://img.shields.io/npm/l/sass-colors" alt="Package License"/></a> <a href="https://www.npmjs.com/sass-colors" target="_blank"> <img src="https://img.shields.io/npm/dm/sass-colors" alt="NPM Downloads"/></a> <a href="https://github.com/yonicb/sass-colors" target="_blank"> <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage"/></a> <a href="https://github.com/yonicb/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass.colors-yellow?style=flat-square&logo=github"/></a> <a href="https://github.com/yonicb"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor"/></a> <a href="https://twitter.com/yonicalsin" target="_blank"> <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a> </p><div class="fx" id="show-colors"> </div><h2>🌐 Description</h2> <p> Under the hood, sass-colors uses scss/sass, but also provides compatibility with a wide range of other libraries, such as Eg ReactJs, Vuejs, Angular, which allows easy use of the countless third-party add-ons that are available! </p><h2>📦 Installation</h2> <p> To start using Sass-colors you need to install it with the package manager npm or yarn, as shown in the next section or download it directly! </p><pre><code class="language-javascript">// To install using npm
-npm install sass-colors -S
+<!DOCTYPE html>
+<html lang="en">
 
-// To install using yarn
-yarn add sass-colors
-                </code></pre> <h2>▶️ Getting started</h2> <p> To use the beautiful colors of sass-colors is very simple, first we will import the colors.scss file that contains the colors. Example: </p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Documentation - Sass-colors</title>
+   <link rel="stylesheet" href="./index.css">
+</head>
 
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre> <p> As you can see we already import correctly! Sass-Colors includes a function that adds selection a color and its secondary color, for example: </p><pre><code class="language-scss">@import "src/colors.scss";
-                
-body {
-   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
-   background: Color("red", "base");
-}
-                </code></pre> <pre><code class="language-scss">// I will explain more clearly!
-// First we import this color map for this example.
+<body class="fadeIn">
+   <header class="fadeInDown">
+      <div class="container">
+         <div class="fx"> <img src="https://i.ibb.co/b596wMs/sass-colors.png" class="logo">
+            <h1>Sass-colors</h1>
+         </div>
+         <div class="socials"> <a href="http://twitter.com/yonicalsin" target="_blank"> <img
+                  src="https://image.flaticon.com/icons/png/512/733/733579.png" alt="Twitter Logo"> </a> <a
+               href="https://github.com/yonicb" target="_blank"> <img
+                  src="https://image.flaticon.com/icons/png/512/37/37318.png" alt="Github Logo"> </a> <a
+               href="https://www.instagram.com/yoni_calsin/" target="_blank"> <img
+                  src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="Instagram Logo"> </a> <a
+               href="https://www.linkedin.com/in/yonicb/" target="_blank"> <img
+                  src="https://image.flaticon.com/icons/png/512/174/174857.png" alt="Linkedin Logo"> </a> <a
+               href="https://www.npmjs.com/~yonicb" target="_blank"> <img
+                  src="https://static.npmjs.com/c426a1116301d1fd178c51522484127a.png" alt="Npm Logo"> </a> <a
+               href="https://www.facebook.com/yonicb.official" target="_blank"> <img
+                  src="https://image.flaticon.com/icons/png/512/174/174848.png" alt="Facebook Logo"> </a> </div>
+      </div>
+   </header>
+   <main>
+      <div class="container">
+         <h1 align="center">SASS-COLORS</h1>
+         <p align="center"> 🎨 Sass-colors 🌐 is a scss library, which adds modern colors. </p>
+         <p align="center" style="max-width: 450px; margin: auto;"> <a href="https://github.com/yonicb/sass-colors"><img
+                  src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a> <a
+               href="https://www.npmjs.com/sass-colors" target="_blank"> <img
+                  src="https://img.shields.io/npm/v/sass-colors" alt="NPM Version" /></a> <a
+               href="https://www.npmjs.com/sass-colors" target="_blank"> <img
+                  src="https://img.shields.io/npm/l/sass-colors" alt="Package License" /></a> <a
+               href="https://www.npmjs.com/sass-colors" target="_blank"> <img
+                  src="https://img.shields.io/npm/dm/sass-colors" alt="NPM Downloads" /></a> <a
+               href="https://github.com/yonicb/sass-colors" target="_blank"> <img
+                  src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a> <a
+               href="https://github.com/yonicb/sass-colors"><img
+                  src="https://img.shields.io/badge/Github%20Page-sass.colors-yellow?style=flat-square&logo=github" /></a>
+            <a href="https://github.com/yonicb"><img
+                  src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
+            <a href="https://twitter.com/yonicalsin" target="_blank"> <img
+                  src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a> </p>
+         <div class="fx" id="show-colors"> </div>
 
-/**
-| Main Color | Color value |
-**/
-$deep-red: (
-   "base":       #e51c23,
-   "lighten-5":  #fdeaeb,
-   "lighten-4":  #f8c1c3,
-   "lighten-3":  #f3989b,
-   "lighten-2":  #ee6e73,
-   "lighten-1":  #ea454b,
-   "darken-1":   #d0181e,
-   "darken-2":   #b9151b,
-   "darken-3":   #a21318,
-   "darken-4":   #8b1014,
-);
-// When you execute the function that requires two parameters
-/**
-Color ($primary-color, $secondary-color)
-**/</code></pre> <h2>🎨 Colors</h2> <table> <tr> <th> N° </th> <th> Name </th> </tr><tr> <td> 1 </td><td> deep-red </td></tr><tr> <td> 2 </td><td> red </td></tr><tr> <td> 3 </td><td> pink </td></tr><tr> <td> 4 </td><td> purple </td></tr><tr> <td> 5 </td><td> deep-purple </td></tr><tr> <td> 6 </td><td> indigo </td></tr><tr> <td> 7 </td><td> blue </td></tr><tr> <td> 8 </td><td> light-blue </td></tr><tr> <td> 9 </td><td> cyan </td></tr><tr> <td> 10 </td><td> teal </td></tr><tr> <td> 11 </td><td> green </td></tr><tr> <td> 12 </td><td> light-green </td></tr><tr> <td> 13 </td><td> lime </td></tr><tr> <td> 15 </td><td> yellow </td></tr><tr> <td> 16 </td><td> amber </td></tr><tr> <td> 17 </td><td> orange </td></tr><tr> <td> 18 </td><td> deep-orange </td></tr><tr> <td> 19 </td><td> brown </td></tr><tr> <td> 20 </td><td> blue-grey </td></tr><tr> <td> 21 </td><td> grey </td></tr></table> </p><h2>🎨 Shades</h2> <table> <tr> <th>N°</th> <th>Name</th> </tr><tr> <td>22</td><td>black</td></tr><tr> <td>23</td><td>white</td></tr><tr> <td>24</td><td>transparent</td></tr></table> <p> <ol> <li>black </li><li>white </li><li>transparent </li></ol> </p><h4>📚 Deep Red Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
-*  Deep Red Colors
-**/
-$deep-red: (
-   "base":       #e51c23,
-   "lighten-5":  #fdeaeb,
-   "lighten-4":  #f8c1c3,
-   "lighten-3":  #f3989b,
-   "lighten-2":  #ee6e73,
-   "lighten-1":  #ea454b,
-   "darken-1":   #d0181e,
-   "darken-2":   #b9151b,
-   "darken-3":   #a21318,
-   "darken-4":   #8b1014,
-);</code></pre> <h4>📚 Red Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
-*  Red Colors
-**/
-$red: (
-   "base":       #F44336,
-   "lighten-5":  #FFEBEE,
-   "lighten-4":  #FFCDD2,
-   "lighten-3":  #EF9A9A,
-   "lighten-2":  #E57373,
-   "lighten-1":  #EF5350,
-   "darken-1":   #E53935,
-   "darken-2":   #D32F2F,
-   "darken-3":   #C62828,
-   "darken-4":   #B71C1C,
-   "accent-1":    #FF8A80,
-   "accent-2":    #FF5252,
-   "accent-3":    #FF1744,
-   "accent-4":    #D50000
-);</code></pre> <h4>📚 Pink Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
-*  Pink Colors
-**/
-$pink: (
-   "base":       #e91e63,
-   "lighten-5":  #fce4ec,
-   "lighten-4":  #f8bbd0,
-   "lighten-3":  #f48fb1,
-   "lighten-2":  #f06292,
-   "lighten-1":  #ec407a,
-   "darken-1":   #d81b60,
-   "darken-2":   #c2185b,
-   "darken-3":   #ad1457,
-   "darken-4":   #880e4f,
-   "accent-1":    #ff80ab,
-   "accent-2":    #ff4081,
-   "accent-3":    #f50057,
-   "accent-4":    #c51162
-);</code></pre> <h4>📚 Purple Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
-*  Purple Colors
-**/
-$purple: (
-   "base":       #9c27b0,
-   "lighten-5":  #f3e5f5,
-   "lighten-4":  #e1bee7,
-   "lighten-3":  #ce93d8,
-   "lighten-2":  #ba68c8,
-   "lighten-1":  #ab47bc,
-   "darken-1":   #8e24aa,
-   "darken-2":   #7b1fa2,
-   "darken-3":   #6a1b9a,
-   "darken-4":   #4a148c,
-   "accent-1":    #ea80fc,
-   "accent-2":    #e040fb,
-   "accent-3":    #d500f9,
-   "accent-4":    #aa00ff
-);</code></pre> <h4>📚 Deep Purple Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
-*  Deep Purple Colors
-**/
-$deep-purple: (
-   "base":       #673ab7,
-   "lighten-5":  #ede7f6,
-   "lighten-4":  #d1c4e9,
-   "lighten-3":  #b39ddb,
-   "lighten-2":  #9575cd,
-   "lighten-1":  #7e57c2,
-   "darken-1":   #5e35b1,
-   "darken-2":   #512da8,
-   "darken-3":   #4527a0,
-   "darken-4":   #311b92,
-   "accent-1":    #b388ff,
-   "accent-2":    #7c4dff,
-   "accent-3":    #651fff,
-   "accent-4":    #6200ea
-);</code></pre> <h4>📚 Indigo Colors</h4> <p>Example:</p><pre><code class="language-scss">/**
-*  Indigo Colors
-**/
-$indigo: (
-   "base":       #3f51b5,
-   "lighten-5":  #e8eaf6,
-   "lighten-4":  #c5cae9,
-   "lighten-3":  #9fa8da,
-   "lighten-2":  #7986cb,
-   "lighten-1":  #5c6bc0,
-   "darken-1":   #3949ab,
-   "darken-2":   #303f9f,
-   "darken-3":   #283593,
-   "darken-4":   #1a237e,
-   "accent-1":    #8c9eff,
-   "accent-2":    #536dfe,
-   "accent-3":    #3d5afe,
-   "accent-4":    #304ffe
-);</code></pre> <h4>📚 Blue Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
 
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>0 <h4>📚 Light Blue Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
+         <p class="has-line-data" data-line-start="0" data-line-end="3">&lt;p align=“center”&gt;<br>
+            &lt;a href=&quot;<a
+               href="https://github.com/yonicb/sass-colors">https://github.com/yonicb/sass-colors</a>&quot;
+            target=“blank”&gt;&lt;img src=&quot;<a
+               href="https://i.ibb.co/b596wMs/sass-colors.png">https://i.ibb.co/b596wMs/sass-colors.png</a>&quot;
+            width=“120” alt=“Sass-colors Logo” /&gt;&lt;/a&gt;<br>
+            &lt;/p&gt;</p>
+         <p class="has-line-data" data-line-start="4" data-line-end="25">&lt;p align=“center”&gt;<br>
+            🎨 Sass-colors 🌐 is a scss library, which adds modern colors.<br>
+            &lt;/p&gt;<br>
+            &lt;p align=“center” style=“max-width: 450px; margin: auto;”&gt;<br>
+            &lt;!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section --&gt;<br>
+            &lt;a href=&quot;<a
+               href="https://github.com/yonicb/sass-colors">https://github.com/yonicb/sass-colors</a>&quot; title=“All
+            Contributors”&gt;&lt;img src=&quot;<a
+               href="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square">https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square</a>&quot;
+            /&gt;&lt;/a&gt;<br>
+            &lt;!-- ALL-CONTRIBUTORS-BADGE:END --&gt;<br>
+            &lt;a href=&quot;<a
+               href="https://github.com/yonicb/sass-colors">https://github.com/yonicb/sass-colors</a>“&gt;&lt;img
+            src=”<a
+               href="https://img.shields.io/spiget/stars/1000?color=brightgreen&amp;label=Star&amp;logo=github">https://img.shields.io/spiget/stars/1000?color=brightgreen&amp;label=Star&amp;logo=github</a>&quot;
+            /&gt;&lt;/a&gt;<br>
+            &lt;a href=&quot;<a href="https://www.npmjs.com/sass-colors">https://www.npmjs.com/sass-colors</a>&quot;
+            target=&quot;_blank&quot;&gt;<br>
+            &lt;img src=&quot;<a
+               href="https://img.shields.io/npm/v/sass-colors">https://img.shields.io/npm/v/sass-colors</a>&quot;
+            alt=“NPM Version” /&gt;&lt;/a&gt;<br>
+            &lt;a href=&quot;<a href="https://www.npmjs.com/sass-colors">https://www.npmjs.com/sass-colors</a>&quot;
+            target=&quot;_blank&quot;&gt;<br>
+            &lt;img src=&quot;<a
+               href="https://img.shields.io/npm/l/sass-colors">https://img.shields.io/npm/l/sass-colors</a>&quot;
+            alt=“Package License” /&gt;&lt;/a&gt;<br>
+            &lt;a href=&quot;<a href="https://www.npmjs.com/sass-colors">https://www.npmjs.com/sass-colors</a>&quot;
+            target=&quot;_blank&quot;&gt;<br>
+            &lt;img src=&quot;<a
+               href="https://img.shields.io/npm/dm/sass-colors">https://img.shields.io/npm/dm/sass-colors</a>&quot;
+            alt=“NPM Downloads” /&gt;&lt;/a&gt;<br>
+            &lt;a href=&quot;<a
+               href="https://github.com/yonicb/sass-colors">https://github.com/yonicb/sass-colors</a>&quot;
+            target=&quot;_blank&quot;&gt;<br>
+            &lt;img src=&quot;<a
+               href="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg">https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg</a>&quot;
+            alt=“Coverage” /&gt;&lt;/a&gt;<br>
+            &lt;a href=&quot;<a
+               href="https://github.com/yonicb/sass-colors">https://github.com/yonicb/sass-colors</a>“&gt;&lt;img
+            src=”<a
+               href="https://img.shields.io/badge/Github%20Page-sass.colors-yellow?style=flat-square&amp;logo=github">https://img.shields.io/badge/Github
+               Page-sass.colors-yellow?style=flat-square&amp;logo=github</a>&quot; /&gt;&lt;/a&gt;<br>
+            &lt;a href=&quot;<a href="https://github.com/yonicb">https://github.com/yonicb</a>“&gt;&lt;img src=”<a
+               href="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&amp;logo=appveyor">https://img.shields.io/badge/Author-Yoni
+               Calsin-blueviolet?style=flat-square&amp;logo=appveyor</a>&quot; /&gt;&lt;/a&gt;<br>
+            &lt;a href=&quot;<a href="https://twitter.com/yonicb">https://twitter.com/yonicb</a>&quot;
+            target=&quot;_blank&quot;&gt;<br>
+            &lt;img src=&quot;<a
+               href="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&amp;label=Follow">https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&amp;label=Follow</a>&quot;&gt;&lt;/a&gt;<br>
+            &lt;/p&gt;</p>
+         <ul>
+            <li class="has-line-data" data-line-start="26" data-line-end="27">🔨 <a href="#-demo">Demo</a></li>
+            <li class="has-line-data" data-line-start="27" data-line-end="28">📘 <a
+                  href="#-documentation">Documentation</a></li>
+            <li class="has-line-data" data-line-start="28" data-line-end="29">💬 <a href="#-description">Description</a>
+            </li>
+            <li class="has-line-data" data-line-start="29" data-line-end="30">🐦 <a
+                  href="#-installation">Installation</a></li>
+            <li class="has-line-data" data-line-start="30" data-line-end="31">▶️ <a
+                  href="#%EF%B8%8F-getting-started">Getting started</a></li>
+            <li class="has-line-data" data-line-start="31" data-line-end="56">🎨 <a href="#-colors">Colors</a>
+               <ul>
+                  <li class="has-line-data" data-line-start="32" data-line-end="33">🏮 <a href="#-deep-red-colors">Deep
+                        Red</a></li>
+                  <li class="has-line-data" data-line-start="33" data-line-end="34">🔴 <a href="#-red-colors">Red</a>
+                  </li>
+                  <li class="has-line-data" data-line-start="34" data-line-end="35">🎀 <a href="#-pink-colors">Pink</a>
+                  </li>
+                  <li class="has-line-data" data-line-start="35" data-line-end="36">💜 <a
+                        href="#-purple-colors">Purple</a></li>
+                  <li class="has-line-data" data-line-start="36" data-line-end="37">☂️ <a
+                        href="#-deep-purple-colors">Deep Purple</a></li>
+                  <li class="has-line-data" data-line-start="37" data-line-end="38">🎨 <a
+                        href="#-indigo-colors">Indigo</a></li>
+                  <li class="has-line-data" data-line-start="38" data-line-end="39">📘 <a href="#-blue-colors">Blue</a>
+                  </li>
+                  <li class="has-line-data" data-line-start="39" data-line-end="40">🔵 <a
+                        href="#-light-blue-colors">Light Blue</a></li>
+                  <li class="has-line-data" data-line-start="40" data-line-end="41">🎨 <a href="#-cyan-colors">Cyan</a>
+                  </li>
+                  <li class="has-line-data" data-line-start="41" data-line-end="42">🎨 <a href="#-teal-colors">Teal</a>
+                  </li>
+                  <li class="has-line-data" data-line-start="42" data-line-end="43">💚 <a
+                        href="#-green-colors">Green</a></li>
+                  <li class="has-line-data" data-line-start="43" data-line-end="44">🍏 <a
+                        href="#-light-green-colors">Light Green</a></li>
+                  <li class="has-line-data" data-line-start="44" data-line-end="45">🍈 <a href="#-lime-colors">Lime</a>
+                  </li>
+                  <li class="has-line-data" data-line-start="45" data-line-end="46">💛 <a
+                        href="#-yellow-colors">Yellow</a></li>
+                  <li class="has-line-data" data-line-start="46" data-line-end="47">🎨 <a
+                        href="#-amber-colors">Amber</a></li>
+                  <li class="has-line-data" data-line-start="47" data-line-end="48">📙 <a
+                        href="#-orange-colors">Orange</a></li>
+                  <li class="has-line-data" data-line-start="48" data-line-end="49">🧡 <a
+                        href="#-deep-orange-colors">Deep Orange</a></li>
+                  <li class="has-line-data" data-line-start="49" data-line-end="50">🤝🏾 <a
+                        href="#-brown-colors">Brown</a></li>
+                  <li class="has-line-data" data-line-start="50" data-line-end="51">🎨 <a href="#-blue-grey-colors">Blue
+                        Grey</a></li>
+                  <li class="has-line-data" data-line-start="51" data-line-end="52">🎨 <a href="#-grey-colors">Grey</a>
+                  </li>
+                  <li class="has-line-data" data-line-start="52" data-line-end="53">⚫ <a
+                        href="#-shades-colors">Black</a></li>
+                  <li class="has-line-data" data-line-start="53" data-line-end="54">⚪ <a
+                        href="#-shades-colors">White</a></li>
+                  <li class="has-line-data" data-line-start="54" data-line-end="56">🎨 <a
+                        href="#-shades-colors">Transparent</a></li>
+               </ul>
+            </li>
+         </ul>
+         <h2 class="code-line" data-line-start=56 data-line-end=57><a id="_Demo_56"></a>🎉 Demo</h2>
+         <p class="has-line-data" data-line-start="57" data-line-end="60">&lt;p&gt;<br>
+            Preview live &lt;a href=&quot;<a
+               href="https://yonicb.github.io/sass-colors/">https://yonicb.github.io/sass-colors/</a>&quot;
+            target=&quot;_blank&quot;&gt;Click Here&lt;/a&gt;<br>
+            &lt;/p&gt;</p>
+         <h3 class="code-line" data-line-start=61 data-line-end=62><a id="_Documentation_61"></a>📚 Documentation</h3>
+         <p class="has-line-data" data-line-start="62" data-line-end="65">&lt;p&gt;<br>
+            Go to documentation &lt;a href=&quot;<a
+               href="https://yonicb.github.io/sass-colors/">https://yonicb.github.io/sass-colors/</a>&quot;
+            target=&quot;_blank&quot;&gt;Click Here&lt;/a&gt;<br>
+            &lt;/p&gt;</p>
+         <h2 class="code-line" data-line-start=66 data-line-end=67><a id="_Description_66"></a>🌐 Description</h2>
+         <p class="has-line-data" data-line-start="68" data-line-end="71">&lt;p&gt;<br>
+            Under the hood, sass-colors uses scss/sass, but also provides compatibility with a wide range of other
+            libraries, such as Eg ReactJs, Vuejs, Angular, which allows easy use of the countless third-party add-ons
+            that are available!<br>
+            &lt;/p&gt;</p>
+         <h2 class="code-line" data-line-start=73 data-line-end=74><a id="_Installation_73"></a>📦 Installation</h2>
+         <p class="has-line-data" data-line-start="74" data-line-end="77">&lt;p&gt;<br>
+            To start using Sass-colors you need to install it with the package manager npm or yarn, as shown in the next
+            section or download it directly!<br>
+            &lt;/p&gt;</p>
+         <pre><code class="has-line-data" data-line-start="79" data-line-end="85" class="language-ts"><span class="hljs-comment">// To install using npm</span>
+            npm install sass-colors -S
+            
+            <span class="hljs-comment">// To install using yarn</span>
+            yarn add sass-colors
+            </code></pre>
+         <h2 class="code-line" data-line-start=86 data-line-end=87><a id="_Getting_started_86"></a>▶️ Getting started
+         </h2>
+         <p class="has-line-data" data-line-start="87" data-line-end="90">&lt;p&gt;<br>
+            To use the beautiful colors of sass-colors is very simple, first we will import the colors.scss file that
+            contains the colors. Example:<br>
+            &lt;/p&gt;</p>
+         <pre><code class="has-line-data" data-line-start="92" data-line-end="101" class="language-scss"><span class="hljs-comment">// If you use nodejs, reactjs, vuejs or angular</span>
+            <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"node_modules/sass-colors/src/colors.scss"</span>;</span>
+            
+            <span class="hljs-comment">// You can also download it directly and import the file colors.scss, as follows</span>
+            <span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"src/colors.scss"</span>;</span>
+            
+            <span class="hljs-comment">// usage: color("name_of_color", "type_of_color")</span>
+            <span class="hljs-comment">// to avoid to repeating map-get($colors, ...)</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="101" data-line-end="105">&lt;p&gt;<br>
+            As you can see we already import correctly!<br>
+            Sass-Colors includes a function that adds selection a color and its secondary color, for example:<br>
+            &lt;/p&gt;</p>
+         <pre><code class="has-line-data" data-line-start="107" data-line-end="122" class="language-scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">"src/colors.scss"</span>;</span>
+            
+            <span class="hljs-tag">body</span> {
+              <span class="hljs-comment">// First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color</span>
+            
+              <span class="hljs-comment">// usage: color("name_of_color", "type_of_color")</span>
+              <span class="hljs-comment">// to avoid to repeating map-get($colors, ...)</span>
+              <span class="hljs-attribute">background</span><span class="hljs-value">: <span class="hljs-function">color</span>(<span class="hljs-string">"red"</span>, <span class="hljs-string">"base"</span>);</span>
+            }
+            <span class="hljs-class">.button</span> {
+              <span class="hljs-attribute">background</span><span class="hljs-value">: <span class="hljs-function">color</span>(<span class="hljs-string">"blue"</span>, <span class="hljs-string">"accent-1"</span>);</span>
+              <span class="hljs-attribute">color</span><span class="hljs-value">: white;</span>
+              <span class="hljs-attribute">border</span><span class="hljs-value">: <span class="hljs-number">1px</span> solid <span class="hljs-function">color</span>(<span class="hljs-string">"blue"</span>, <span class="hljs-string">"darken-1"</span>);</span>
+            }
+            </code></pre>
+         <pre><code class="has-line-data" data-line-start="124" data-line-end="148" class="language-scss"><span class="hljs-comment">// I will explain more clearly!</span>
+            <span class="hljs-comment">// First we import this color map for this example.</span>
+            
+            <span class="hljs-comment">/**
+            | Main Color | Color value |
+            **/</span>
+            <span class="hljs-variable">$deep-red</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#e51c23</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#fdeaeb</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#f8c1c3</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#f3989b</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#ee6e73</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#ea454b</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#d0181e</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#b9151b</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#a21318</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#8b1014</span>,
+            );</span>
+            <span class="hljs-comment">// When you execute the function that requires two parameters</span>
+            <span class="hljs-comment">/**
+            color($primary-color, $secondary-color)
+            **/</span>
+            
+            </code></pre>
+         <h2 class="code-line" data-line-start=149 data-line-end=150><a id="_Colors_149"></a>🎨 Colors</h2>
+         <table class="table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th>N°</th>
+                  <th>Name</th>
+                  <th>Lighten</th>
+                  <th>Darken</th>
+                  <th>Accent</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>1</td>
+                  <td>deep-red</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+               </tr>
+               <tr>
+                  <td>2</td>
+                  <td>red</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>3</td>
+                  <td>pink</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>4</td>
+                  <td>purple</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>5</td>
+                  <td>deep-purple</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>6</td>
+                  <td>indigo</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>7</td>
+                  <td>blue</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>8</td>
+                  <td>light-blue</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>9</td>
+                  <td>cyan</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>10</td>
+                  <td>teal</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>11</td>
+                  <td>green</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>12</td>
+                  <td>light-green</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>13</td>
+                  <td>lime</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>15</td>
+                  <td>yellow</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>16</td>
+                  <td>amber</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>17</td>
+                  <td>orange</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>18</td>
+                  <td>deep-orange</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+               </tr>
+               <tr>
+                  <td>19</td>
+                  <td>brown</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+               </tr>
+               <tr>
+                  <td>20</td>
+                  <td>blue-grey</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+               </tr>
+               <tr>
+                  <td>21</td>
+                  <td>grey</td>
+                  <td>✔️</td>
+                  <td>✔️</td>
+                  <td>❌</td>
+               </tr>
+            </tbody>
+         </table>
+         <h2 class="code-line" data-line-start=174 data-line-end=175><a id="_Shades_174"></a>🎨 Shades</h2>
+         <table class="table table-striped table-bordered">
+            <thead>
+               <tr>
+                  <th>N°</th>
+                  <th>Name</th>
+                  <th>Ligthen</th>
+                  <th>Darken</th>
+                  <th>Accent</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>22</td>
+                  <td>black</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>❌</td>
+               </tr>
+               <tr>
+                  <td>23</td>
+                  <td>white</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>❌</td>
+               </tr>
+               <tr>
+                  <td>24</td>
+                  <td>transparent</td>
+                  <td>❌</td>
+                  <td>❌</td>
+                  <td>❌</td>
+               </tr>
+            </tbody>
+         </table>
+         <h3 class="code-line" data-line-start=184 data-line-end=185><a id="_Deep_Red_Colors_184"></a>🏮 Deep Red Colors
+         </h3>
+         <p class="has-line-data" data-line-start="185" data-line-end="187">&lt;details&gt;<br>
+            &lt;summary&gt;Show Deep Red Colors &lt;/summary&gt;</p>
+         <pre><code class="has-line-data" data-line-start="189" data-line-end="205" class="language-scss"><span class="hljs-comment">/**
+            *  Deep Red Colors
+            **/</span>
+            <span class="hljs-variable">$deep-red</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#e51c23</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#fdeaeb</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#f8c1c3</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#f3989b</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#ee6e73</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#ea454b</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#d0181e</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#b9151b</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#a21318</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#8b1014</span>,
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="205" data-line-end="206">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=207 data-line-end=208><a id="_Red_Colors_207"></a>🔴 Red Colors</h3>
+         <p class="has-line-data" data-line-start="208" data-line-end="210">&lt;details&gt;<br>
+            &lt;summary&gt;Show Red Colors&lt;/summary&gt;</p>
+         <pre><code class="has-line-data" data-line-start="213" data-line-end="233" class="language-scss"><span class="hljs-comment">/**
+            *  Red Colors
+            **/</span>
+            <span class="hljs-variable">$red</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#F44336</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#FFEBEE</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#FFCDD2</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#EF9A9A</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#E57373</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#EF5350</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#E53935</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#D32F2F</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#C62828</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#B71C1C</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#FF8A80</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#FF5252</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#FF1744</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#D50000</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="233" data-line-end="234">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=236 data-line-end=237><a id="_Pink_Colors_236"></a>🎀 Pink Colors</h3>
+         <p class="has-line-data" data-line-start="237" data-line-end="239">&lt;details&gt;<br>
+            &lt;summary&gt;Show Pink Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="240" data-line-end="241">Example:</p>
+         <pre><code class="has-line-data" data-line-start="242" data-line-end="262" class="language-scss"><span class="hljs-comment">/**
+            *  Pink Colors
+            **/</span>
+            <span class="hljs-variable">$pink</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#e91e63</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#fce4ec</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#f8bbd0</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#f48fb1</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#f06292</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#ec407a</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#d81b60</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#c2185b</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#ad1457</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#880e4f</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#ff80ab</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#ff4081</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#f50057</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#c51162</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="263" data-line-end="264">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=268 data-line-end=269><a id="_Purple_Colors_268"></a>💜 Purple Colors
+         </h3>
+         <p class="has-line-data" data-line-start="269" data-line-end="271">&lt;details&gt;<br>
+            &lt;summary&gt;Show Purple Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="272" data-line-end="273">Example:</p>
+         <pre><code class="has-line-data" data-line-start="274" data-line-end="294" class="language-scss"><span class="hljs-comment">/**
+            *  Purple Colors
+            **/</span>
+            <span class="hljs-variable">$purple</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#9c27b0</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#f3e5f5</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#e1bee7</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#ce93d8</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#ba68c8</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#ab47bc</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#8e24aa</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#7b1fa2</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#6a1b9a</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#4a148c</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#ea80fc</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#e040fb</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#d500f9</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#aa00ff</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="295" data-line-end="296">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=297 data-line-end=298><a id="_Deep_Purple_Colors_297"></a>🎨 Deep Purple
+            Colors</h3>
+         <p class="has-line-data" data-line-start="298" data-line-end="300">&lt;details&gt;<br>
+            &lt;summary&gt;Show Deep Purple Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="301" data-line-end="302">Example:</p>
+         <pre><code class="has-line-data" data-line-start="303" data-line-end="323" class="language-scss"><span class="hljs-comment">/**
+            *  Deep Purple Colors
+            **/</span>
+            <span class="hljs-variable">$deep-purple</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#673ab7</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#ede7f6</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#d1c4e9</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#b39ddb</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#9575cd</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#7e57c2</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#5e35b1</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#512da8</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#4527a0</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#311b92</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#b388ff</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#7c4dff</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#651fff</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#6200ea</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="324" data-line-end="325">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=327 data-line-end=328><a id="_Indigo_Colors_327"></a>🎨 Indigo Colors
+         </h3>
+         <p class="has-line-data" data-line-start="328" data-line-end="330">&lt;details&gt;<br>
+            &lt;summary&gt;Show Indigo Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="331" data-line-end="332">Example:</p>
+         <pre><code class="has-line-data" data-line-start="333" data-line-end="353" class="language-scss"><span class="hljs-comment">/**
+            *  Indigo Colors
+            **/</span>
+            <span class="hljs-variable">$indigo</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#3f51b5</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#e8eaf6</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#c5cae9</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#9fa8da</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#7986cb</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#5c6bc0</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#3949ab</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#303f9f</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#283593</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#1a237e</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#8c9eff</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#536dfe</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#3d5afe</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#304ffe</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="354" data-line-end="355">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=356 data-line-end=357><a id="_Blue_Colors_356"></a>📘 Blue Colors</h3>
+         <p class="has-line-data" data-line-start="357" data-line-end="359">&lt;details&gt;<br>
+            &lt;summary&gt;Show Blue Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="361" data-line-end="362">Example:</p>
+         <pre><code class="has-line-data" data-line-start="363" data-line-end="383" class="language-scss"><span class="hljs-comment">/**
+            *  Blue Colors
+            **/</span>
+            <span class="hljs-variable">$blue</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#2196F3</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#E3F2FD</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#BBDEFB</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#90CAF9</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#64B5F6</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#42A5F5</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#1E88E5</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#1976D2</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#1565C0</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#0D47A1</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#82B1FF</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#448AFF</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#2979FF</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#2962FF</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="383" data-line-end="384">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=386 data-line-end=387><a id="_Light_Blue_Colors_386"></a>🔵 Light Blue
+            Colors</h3>
+         <p class="has-line-data" data-line-start="387" data-line-end="389">&lt;details&gt;<br>
+            &lt;summary&gt;Show Light Blue Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="390" data-line-end="391">Example:</p>
+         <pre><code class="has-line-data" data-line-start="392" data-line-end="412" class="language-scss"><span class="hljs-comment">/**
+            *  Light Blue Colors
+            **/</span>
+            <span class="hljs-variable">$light-blue</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#03a9f4</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#e1f5fe</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#b3e5fc</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#81d4fa</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#4fc3f7</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#29b6f6</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#039be5</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#0288d1</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#0277bd</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#01579b</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#80d8ff</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#40c4ff</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#00b0ff</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#0091ea</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="413" data-line-end="414">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=415 data-line-end=416><a id="_Cyan_Colors_415"></a>🎨 Cyan Colors</h3>
+         <p class="has-line-data" data-line-start="416" data-line-end="418">&lt;details&gt;<br>
+            &lt;summary&gt;Show Cyan Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="419" data-line-end="420">Example:</p>
+         <pre><code class="has-line-data" data-line-start="421" data-line-end="441" class="language-scss"><span class="hljs-comment">/**
+            *  Cyan Colors
+            **/</span>
+            <span class="hljs-variable">$cyan</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#00bcd4</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#e0f7fa</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#b2ebf2</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#80deea</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#4dd0e1</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#26c6da</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#00acc1</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#0097a7</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#00838f</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#006064</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#84ffff</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#18ffff</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#00e5ff</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#00b8d4</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="442" data-line-end="443">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=447 data-line-end=448><a id="_Teal_Colors_447"></a>🎨 Teal Colors</h3>
+         <p class="has-line-data" data-line-start="448" data-line-end="450">&lt;details&gt;<br>
+            &lt;summary&gt;Show Teal Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="451" data-line-end="452">Example:</p>
+         <pre><code class="has-line-data" data-line-start="453" data-line-end="473" class="language-scss"><span class="hljs-comment">/**
+            *  Teal Colors
+            **/</span>
+            <span class="hljs-variable">$teal</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#009688</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#e0f2f1</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#b2dfdb</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#80cbc4</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#4db6ac</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#26a69a</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#00897b</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#00796b</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#00695c</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#004d40</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#a7ffeb</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#64ffda</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#1de9b6</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#00bfa5</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="473" data-line-end="474">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=475 data-line-end=476><a id="_Green_Colors_475"></a>💚 Green Colors</h3>
+         <p class="has-line-data" data-line-start="476" data-line-end="478">&lt;details&gt;<br>
+            &lt;summary&gt;Show Green Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="479" data-line-end="480">Example:</p>
+         <pre><code class="has-line-data" data-line-start="481" data-line-end="501" class="language-scss"><span class="hljs-comment">/**
+            *  Green Colors
+            **/</span>
+            <span class="hljs-variable">$green</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#4CAF50</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#E8F5E9</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#C8E6C9</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#A5D6A7</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#81C784</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#66BB6A</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#43A047</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#388E3C</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#2E7D32</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#1B5E20</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#B9F6CA</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#69F0AE</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#00E676</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#00C853</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="501" data-line-end="502">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=503 data-line-end=504><a id="_Light_Green_Colors_503"></a>🍏 Light Green
+            Colors</h3>
+         <p class="has-line-data" data-line-start="504" data-line-end="506">&lt;details&gt;<br>
+            &lt;summary&gt;Show Light Green Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="507" data-line-end="508">Example:</p>
+         <pre><code class="has-line-data" data-line-start="509" data-line-end="529" class="language-scss"><span class="hljs-comment">/**
+            *  Light Green Colors
+            **/</span>
+            <span class="hljs-variable">$light-green</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#8bc34a</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#f1f8e9</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#dcedc8</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#c5e1a5</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#aed581</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#9ccc65</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#7cb342</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#689f38</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#558b2f</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#33691e</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#ccff90</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#b2ff59</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#76ff03</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#64dd17</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="530" data-line-end="531">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=532 data-line-end=533><a id="_Lime_Colors_532"></a>🍈 Lime Colors</h3>
+         <p class="has-line-data" data-line-start="533" data-line-end="535">&lt;details&gt;<br>
+            &lt;summary&gt;Show Lime Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="536" data-line-end="537">Example:</p>
+         <pre><code class="has-line-data" data-line-start="538" data-line-end="558" class="language-scss"><span class="hljs-comment">/**
+            *  Lime Colors
+            **/</span>
+            <span class="hljs-variable">$lime</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#cddc39</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#f9fbe7</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#f0f4c3</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#e6ee9c</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#dce775</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#d4e157</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#c0ca33</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#afb42b</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#9e9d24</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#827717</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#f4ff81</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#eeff41</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#c6ff00</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#aeea00</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="559" data-line-end="560">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=562 data-line-end=563><a id="_Yellow_Colors_562"></a>💛 Yellow Colors
+         </h3>
+         <p class="has-line-data" data-line-start="563" data-line-end="565">&lt;details&gt;<br>
+            &lt;summary&gt;Show Yellow Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="566" data-line-end="567">Example:</p>
+         <pre><code class="has-line-data" data-line-start="568" data-line-end="588" class="language-scss"><span class="hljs-comment">/**
+            *  Yellow Colors
+            **/</span>
+            <span class="hljs-variable">$yellow</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#ffeb3b</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#fffde7</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#fff9c4</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#fff59d</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#fff176</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#ffee58</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#fdd835</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#fbc02d</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#f9a825</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#f57f17</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#ffff8d</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#ffff00</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#ffea00</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#ffd600</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="590" data-line-end="591">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=592 data-line-end=593><a id="_Amber_Colors_592"></a>🎨 Amber Colors</h3>
+         <p class="has-line-data" data-line-start="593" data-line-end="595">&lt;details&gt;<br>
+            &lt;summary&gt;Show Amber Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="596" data-line-end="597">Example:</p>
+         <pre><code class="has-line-data" data-line-start="598" data-line-end="618" class="language-scss"><span class="hljs-comment">/**
+            *  Amber Colors
+            **/</span>
+            <span class="hljs-variable">$amber</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#ffc107</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#fff8e1</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#ffecb3</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#ffe082</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#ffd54f</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#ffca28</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#ffb300</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#ffa000</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#ff8f00</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#ff6f00</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#ffe57f</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#ffd740</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#ffc400</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#ffab00</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="619" data-line-end="620">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=622 data-line-end=623><a id="_Orange_Colors_622"></a>📙 Orange Colors
+         </h3>
+         <p class="has-line-data" data-line-start="623" data-line-end="625">&lt;details&gt;<br>
+            &lt;summary&gt;Show Orange Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="626" data-line-end="627">Example:</p>
+         <pre><code class="has-line-data" data-line-start="628" data-line-end="648" class="language-scss"><span class="hljs-comment">/**
+            *  Orange Colors
+            **/</span>
+            <span class="hljs-variable">$orange</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#ff9800</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#fff3e0</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#ffe0b2</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#ffcc80</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#ffb74d</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#ffa726</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#fb8c00</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#f57c00</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#ef6c00</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#e65100</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#ffd180</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#ffab40</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#ff9100</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#ff6d00</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="648" data-line-end="649">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=651 data-line-end=652><a id="_Deep_Orange_Colors_651"></a>🧡 Deep Orange
+            Colors</h3>
+         <p class="has-line-data" data-line-start="652" data-line-end="654">&lt;details&gt;<br>
+            &lt;summary&gt;Show Deep Orange Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="655" data-line-end="656">Example:</p>
+         <pre><code class="has-line-data" data-line-start="657" data-line-end="677" class="language-scss"><span class="hljs-comment">/**
+            *  Deep Orange Colors
+            **/</span>
+            <span class="hljs-variable">$deep-orange</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#ff5722</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#fbe9e7</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#ffccbc</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#ffab91</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#ff8a65</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#ff7043</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#f4511e</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#e64a19</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#d84315</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#bf360c</span>,
+              <span class="hljs-string">"accent-1"</span>:    <span class="hljs-hexcolor">#ff9e80</span>,
+              <span class="hljs-string">"accent-2"</span>:    <span class="hljs-hexcolor">#ff6e40</span>,
+              <span class="hljs-string">"accent-3"</span>:    <span class="hljs-hexcolor">#ff3d00</span>,
+              <span class="hljs-string">"accent-4"</span>:    <span class="hljs-hexcolor">#dd2c00</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="677" data-line-end="678">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=680 data-line-end=681><a id="_Brown_Colors_680"></a>🤝🏾 Brown Colors
+         </h3>
+         <p class="has-line-data" data-line-start="681" data-line-end="683">&lt;details&gt;<br>
+            &lt;summary&gt;Show Brown Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="684" data-line-end="685">Example:</p>
+         <pre><code class="has-line-data" data-line-start="686" data-line-end="702" class="language-scss"><span class="hljs-comment">/**
+            *  Brown Colors
+            **/</span>
+            <span class="hljs-variable">$brown</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#795548</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#efebe9</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#d7ccc8</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#bcaaa4</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#a1887f</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#8d6e63</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#6d4c41</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#5d4037</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#4e342e</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#3e2723</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="702" data-line-end="703">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=704 data-line-end=705><a id="_Blue_Grey_Colors_704"></a>🎨 Blue Grey
+            Colors</h3>
+         <p class="has-line-data" data-line-start="705" data-line-end="707">&lt;details&gt;<br>
+            &lt;summary&gt;Show Blue Grey Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="708" data-line-end="709">Example:</p>
+         <pre><code class="has-line-data" data-line-start="710" data-line-end="726" class="language-scss"><span class="hljs-comment">/**
+            *  Blue Grey Colors
+            **/</span>
+            <span class="hljs-variable">$blue-grey</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#607d8b</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#eceff1</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#cfd8dc</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#b0bec5</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#90a4ae</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#78909c</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#546e7a</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#455a64</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#37474f</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#263238</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="726" data-line-end="727">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=729 data-line-end=730><a id="_Grey_Colors_729"></a>🎨 Grey Colors</h3>
+         <p class="has-line-data" data-line-start="730" data-line-end="732">&lt;details&gt;<br>
+            &lt;summary&gt;Show Grey Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="733" data-line-end="734">Example:</p>
+         <pre><code class="has-line-data" data-line-start="735" data-line-end="751" class="language-scss"><span class="hljs-comment">/**
+            *  Grey Colors
+            **/</span>
+            <span class="hljs-variable">$grey</span><span class="hljs-value">: (
+              <span class="hljs-string">"base"</span>:       <span class="hljs-hexcolor">#9e9e9e</span>,
+              <span class="hljs-string">"lighten-5"</span>:  <span class="hljs-hexcolor">#fafafa</span>,
+              <span class="hljs-string">"lighten-4"</span>:  <span class="hljs-hexcolor">#f5f5f5</span>,
+              <span class="hljs-string">"lighten-3"</span>:  <span class="hljs-hexcolor">#eeeeee</span>,
+              <span class="hljs-string">"lighten-2"</span>:  <span class="hljs-hexcolor">#e0e0e0</span>,
+              <span class="hljs-string">"lighten-1"</span>:  <span class="hljs-hexcolor">#bdbdbd</span>,
+              <span class="hljs-string">"darken-1"</span>:   <span class="hljs-hexcolor">#757575</span>,
+              <span class="hljs-string">"darken-2"</span>:   <span class="hljs-hexcolor">#616161</span>,
+              <span class="hljs-string">"darken-3"</span>:   <span class="hljs-hexcolor">#424242</span>,
+              <span class="hljs-string">"darken-4"</span>:   <span class="hljs-hexcolor">#212121</span>
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="751" data-line-end="752">&lt;/details&gt;</p>
+         <h3 class="code-line" data-line-start=754 data-line-end=755><a id="_Shades_Colors_754"></a>🎨 Shades Colors
+         </h3>
+         <p class="has-line-data" data-line-start="755" data-line-end="757">&lt;details&gt;<br>
+            &lt;summary&gt;Show Shades Colors&lt;/summary&gt;</p>
+         <p class="has-line-data" data-line-start="758" data-line-end="759">Example:</p>
+         <pre><code class="has-line-data" data-line-start="760" data-line-end="769" class="language-scss"><span class="hljs-comment">/**
+            *  Shades Colors
+            **/</span>
+            <span class="hljs-variable">$shades</span><span class="hljs-value">: (
+              <span class="hljs-string">"black"</span>:        <span class="hljs-hexcolor">#000000</span>,
+              <span class="hljs-string">"white"</span>:        <span class="hljs-hexcolor">#FFFFFF</span>,
+              <span class="hljs-string">"transparent"</span>:  transparent
+            );</span>
+            </code></pre>
+         <p class="has-line-data" data-line-start="769" data-line-end="770">&lt;/details&gt;</p>
+         <h2 class="code-line" data-line-start=773 data-line-end=774><a id="_Support_for_773"></a>⭐ Support for</h2>
+         <p class="has-line-data" data-line-start="775" data-line-end="776">Sass-colors is an open source project
+            licensed by <a href="LICENSE">MIT</a>. You can grow thanks to the sponsors and the support of the amazing
+            sponsors. If you want to join them, <a href="mailto:helloyonicb@gmail.com">contact me here</a>.</p>
+         <h2 class="code-line" data-line-start=778 data-line-end=779><a id="_Stay_in_touch_778"></a>🎩 Stay in touch
+         </h2>
+         <ul>
+            <li class="has-line-data" data-line-start="780" data-line-end="781">Author <a
+                  href="https://github.com/yonicb">Yoni Calsin</a></li>
+            <li class="has-line-data" data-line-start="781" data-line-end="783">Twitter <a
+                  href="https://twitter.com/yonicalsin">Yoni Calsin</a></li>
+         </ul>
+         <h2 class="code-line" data-line-start=783 data-line-end=784><a id="Contributors__783"></a>Contributors ✨</h2>
+         <p class="has-line-data" data-line-start="785" data-line-end="786">Thanks goes to these wonderful people (<a
+               href="https://allcontributors.org/docs/en/emoji-key">emoji key</a>):</p>
+         <p class="has-line-data" data-line-start="787" data-line-end="795">&lt;!-- ALL-CONTRIBUTORS-LIST:START - Do not
+            remove or modify this section --&gt;<br>
+            &lt;!-- prettier-ignore-start --&gt;<br>
+            &lt;!-- markdownlint-disable --&gt;<br>
+            &lt;table&gt;<br>
+            &lt;tr&gt;<br>
+            &lt;td align=“center”&gt;&lt;a href=&quot;<a
+               href="https://twitter.com/yonicalsin">https://twitter.com/yonicalsin</a>“&gt;&lt;img src=”<a
+               href="https://avatars0.githubusercontent.com/u/58490737?v=4">https://avatars0.githubusercontent.com/u/58490737?v=4</a>&quot;
+            width=“70px;” alt=&quot;&quot;/&gt;&lt;br /&gt;&lt;sub&gt;&lt;b&gt;Yoni
+            Calsin&lt;/b&gt;&lt;/sub&gt;&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;<a
+               href="https://github.com/sass-colors/sass-colors/commits?author=yonicb">https://github.com/sass-colors/sass-colors/commits?author=yonicb</a>&quot;
+            title=“Code”&gt;💻&lt;/a&gt; &lt;a href=&quot;<a
+               href="https://github.com/sass-colors/sass-colors/issues?q=author%3Ayonicb">https://github.com/sass-colors/sass-colors/issues?q=author%3Ayonicb</a>&quot;
+            title=“Bug reports”&gt;🐛&lt;/a&gt; &lt;a href=&quot;<a
+               href="https://github.com/sass-colors/sass-colors/commits?author=yonicb">https://github.com/sass-colors/sass-colors/commits?author=yonicb</a>&quot;
+            title=“Documentation”&gt;📖&lt;/a&gt; &lt;a href=&quot;#blog-yonicb&quot;
+            title=“Blogposts”&gt;📝&lt;/a&gt;&lt;/td&gt;<br>
+            &lt;/tr&gt;<br>
+            &lt;/table&gt;</p>
+         <p class="has-line-data" data-line-start="796" data-line-end="799">&lt;!-- markdownlint-enable --&gt;<br>
+            &lt;!-- prettier-ignore-end --&gt;<br>
+            &lt;!-- ALL-CONTRIBUTORS-LIST:END --&gt;</p>
+         <p class="has-line-data" data-line-start="800" data-line-end="801">This project follows the <a
+               href="https://github.com/all-contributors/all-contributors">all-contributors</a> specification.
+            Contributions of any kind welcome!</p>
+         <h2 class="code-line" data-line-start=802 data-line-end=803><a id="_License_802"></a>📜 License</h2>
+         <p class="has-line-data" data-line-start="804" data-line-end="805">Sass-colors is <a href="LICENSE">MIT
+               licensed</a>.</p>
 
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>1 <h4>📚 Cyan Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
 
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>2 <h4>📚 Teal Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
+      </div>
+   </main>
+   <script src="./index.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-scss.min.js"></script>
+</body>
 
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>3 <h4>📚 Green Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
-
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>4 <h4>📚 Light Green Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
-
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>5 <h4>📚 Lime Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
-
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>6 <h4>📚 Yellow Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
-
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>7 <h4>📚 Amber Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
-
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>8 <h4>📚 Orange Colors</h4> <p>Example:</p><pre><code class="language-scss">// If you use nodejs, reajs, vuejs or angular
-@import "sass-colors/src/colors.scss";
-
-// You can also download it directly and import the file colors.scss, as follows
-@import "src/colors.scss";
-                </code></pre>9 <h4>📚 Deep Orange Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
-                
-body {
-   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
-   background: Color("red", "base");
-}
-                </code></pre>0 <h4>📚 Brown Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
-                
-body {
-   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
-   background: Color("red", "base");
-}
-                </code></pre>1 <h4>📚 Blue Grey Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
-                
-body {
-   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
-   background: Color("red", "base");
-}
-                </code></pre>2 <h4>📚 Grey Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
-                
-body {
-   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
-   background: Color("red", "base");
-}
-                </code></pre>3 <h4>📚 Shades Colors</h4> <p>Example:</p><pre><code class="language-scss">@import "src/colors.scss";
-                
-body {
-   // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
-   background: Color("red", "base");
-}
-                </code></pre>4 <h2>⭐ Support for</h2> <p>Sass-colors is an open source project licensed by <a href="LICENSE">MIT</a>. You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, <a href="mailto:helloyonicb@gmail.com">contact me here</a>.</p><h2>🎩 Contributors</h2> <p class="contributors"> <a href="https://github.com/yonicb"><img src="https://avatars0.githubusercontent.com/u/58490737?s=400&v=4" alt="Yoni Stack" width="50" style="background: #fff; padding: 5px; border-radius: 50%;"/></a> </p><h2>🎩 Stay in touch</h2> <ul> <li>Author <a href="https://github.com/yonicb">Yoni Calsin</a></li><li>Twitter <a href="https://twitter.com/yonicalsin">Yoni Calsin</a></li></ul> <h2>📜 License</h2> <p>Sass-colors is <a href="https://github.com/yonicb/sass-colors/blob/master/LICENSE">MIT licensed</a>.</p></div></main> <script src="./index.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/prism.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/components/prism-scss.min.js"></script></body></html>
+</html>
