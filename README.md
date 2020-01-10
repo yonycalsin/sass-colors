@@ -30,7 +30,7 @@
 - 🐦 [Installation](#-installation)
 - ▶️ [Getting started](#-Getting-started)
 - 🎨 [Colors](#-colors)
-  - 🔴 [Deep Red](#-deep-red-colors)
+  - 🏮 [Deep Red](#-deep-red-colors)
   - 🔴 [Red](#-red-colors)
   - 🎀 [Pink](#-pink-colors)
   - 💜 [Purple](#-purple-colors)
@@ -59,7 +59,7 @@
 Preview live <a href="https://yonicb.github.io/sass-colors/" target="_blank">Click Here</a>
 </p>
 
-## 📚 Documentation
+### 📚 Documentation
 <p>
 Go to documentation <a href="https://yonicb.github.io/sass-colors/" target="_blank">Click Here</a>
 </p>
@@ -172,7 +172,7 @@ color($primary-color, $secondary-color)
 
 
 
-## 📚 Deep Red Colors
+### 🏮 Deep Red Colors
 <details>
   <summary>Show Deep Red Colors </summary>
 
@@ -195,7 +195,7 @@ color($primary-color, $secondary-color)
   ```
 </details>
 
-## 📚 Red Colors
+### 🔴 Red Colors
 <details>
   <summary>Show Red Colors</summary>
   
@@ -224,7 +224,7 @@ $red: (
 </details>
 
 
-## 📚 Pink Colors
+### 🎀 Pink Colors
 <details>
   <summary>Show Pink Colors</summary>
 
@@ -256,7 +256,7 @@ $pink: (
 
 
 
-## 📚 Purple Colors
+### 💜 Purple Colors
 <details>
   <summary>Show Purple Colors</summary>
 
@@ -285,7 +285,7 @@ $purple: (
   
 </details>
 
-## 📚 Deep Purple Colors
+### ☂️ Deep Purple Colors
 <details>
   <summary>Show Deep Purple Colors</summary>
 
@@ -315,7 +315,7 @@ $deep-purple: (
 </details>
 
 
-## 📚 Indigo Colors
+### 🎨 Indigo Colors
 <details>
   <summary>Show Indigo Colors</summary>
 
@@ -344,7 +344,7 @@ $indigo: (
   
 </details>
 
-## 📚 Blue Colors
+### 📘 Blue Colors
 <details>
   <summary>Show Blue Colors</summary>
 
@@ -374,7 +374,7 @@ $blue: (
 </details>
 
 
-## 📚 Light Blue Colors
+### 🔵 Light Blue Colors
 <details>
   <summary>Show Light Blue Colors</summary>
 
@@ -403,7 +403,7 @@ $light-blue: (
   
 </details>
 
-## 📚 Cyan Colors
+### 🎨 Cyan Colors
 <details>
   <summary>Show Cyan Colors</summary>
 
@@ -435,7 +435,7 @@ $cyan: (
 
 
 
-## 📚 Teal Colors
+### 🎨 Teal Colors
 <details>
   <summary>Show Teal Colors</summary>
 
@@ -463,7 +463,7 @@ $teal: (
 ```
 </details>
 
-## 📚 Green Colors
+### 💚 Green Colors
 <details>
   <summary>Show Green Colors</summary>
 
@@ -491,7 +491,7 @@ $green: (
 ```
 </details>
 
-## 📚 Light Green Colors
+### 🍏 Light Green Colors
 <details>
   <summary>Show Light Green Colors</summary>
 
@@ -520,7 +520,7 @@ $light-green: (
   
 </details>
 
-## 📚 Lime Colors
+### 🍈 Lime Colors
 <details>
   <summary>Show Lime Colors</summary>
 
@@ -550,7 +550,7 @@ $lime: (
 </details>
 
 
-## 📚 Yellow Colors
+### 💛 Yellow Colors
 <details>
   <summary>Show Yellow Colors</summary>
 
@@ -580,7 +580,7 @@ $yellow: (
   
 </details>
 
-## 📚 Amber Colors
+### 🎨 Amber Colors
 <details>
   <summary>Show Amber Colors</summary>
 
@@ -610,7 +610,7 @@ $amber: (
 </details>
 
 
-## 📚 Orange Colors
+### 📙 Orange Colors
 <details>
   <summary>Show Orange Colors</summary>
   
@@ -639,7 +639,7 @@ $orange: (
 </details>
 
 
-## 📚 Deep Orange Colors
+### 🧡 Deep Orange Colors
 <details>
   <summary>Show Deep Orange Colors</summary>
 
@@ -668,7 +668,7 @@ $deep-orange: (
 </details>
 
 
-## 📚 Brown Colors
+### 🤝🏾 Brown Colors
 <details>
   <summary>Show Brown Colors</summary>
 
@@ -692,7 +692,7 @@ $brown: (
 ```
 </details>
 
-## 📚 Blue Grey Colors
+### 🎨 Blue Grey Colors
 <details>
   <summary>Show Blue Grey Colors</summary>
 
@@ -717,7 +717,7 @@ $blue-grey: (
 </details>
 
 
-## 📚 Grey Colors
+### 🎨 Grey Colors
 <details>
   <summary>Show Grey Colors</summary>
 
@@ -742,7 +742,7 @@ $grey: (
 </details>
 
 
-## 📚 Shades Colors
+### 🎨 Shades Colors
 <details>
   <summary>Show Shades Colors</summary>
 
