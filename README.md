@@ -90,7 +90,7 @@ To use the beautiful colors of sass-colors is very simple, first we will import 
 </p>
 
 ```scss
-// If you use nodejs, reajs, vuejs or angular
+// If you use nodejs, reactjs, vuejs or angular
 @import "node_modules/sass-colors/src/colors.scss";
 
 // You can also download it directly and import the file colors.scss, as follows
