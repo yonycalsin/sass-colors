@@ -1,6 +1,6 @@
 {
    "name": "sass-colors",
-   "version": "1.0.5",
+   "version": "1.0.6",
    "description": "🎨 Sass-colors 🌐 is a scss library, which adds modern colors.",
    "scripts": {
       "dev": "node-sass --watch docs-inc -o docs --output-style compressed"
@@ -19,7 +19,10 @@
       "scss",
       "less",
       "stylus",
-      "bootstrap-scss"
+      "bootstrap-scss",
+      "color-sass",
+      "color-helpers",
+      "helpers"
    ],
    "author": "Yoni Calsin <helloyonicb@gmail.com>",
    "license": "MIT",
