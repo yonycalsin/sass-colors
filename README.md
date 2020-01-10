@@ -172,10 +172,10 @@ color($primary-color, $secondary-color)
 
 
 
+## 📚 Deep Red Colors
 <details>
   <summary>Show Deep Red Colors </summary>
 
-## 📚 Deep Red Colors
   ```scss
   /**
   *  Deep Red Colors
@@ -195,10 +195,10 @@ color($primary-color, $secondary-color)
   ```
 </details>
 
+## 📚 Red Colors
 <details>
   <summary>Show Red Colors</summary>
   
-  ## 📚 Red Colors
 
 ```scss
 /**
@@ -224,10 +224,10 @@ $red: (
 </details>
 
 
+## 📚 Pink Colors
 <details>
   <summary>Show Pink Colors</summary>
 
-## 📚 Pink Colors
 Example:
 ```scss
 /**
@@ -256,10 +256,10 @@ $pink: (
 
 
 
+## 📚 Purple Colors
 <details>
   <summary>Show Purple Colors</summary>
 
-## 📚 Purple Colors
 Example:
 ```scss
 /**
@@ -285,10 +285,10 @@ $purple: (
   
 </details>
 
+## 📚 Deep Purple Colors
 <details>
   <summary>Show Deep Purple Colors</summary>
 
-## 📚 Deep Purple Colors
 Example:
 ```scss
 /**
@@ -315,10 +315,10 @@ $deep-purple: (
 </details>
 
 
+## 📚 Indigo Colors
 <details>
   <summary>Show Indigo Colors</summary>
 
-## 📚 Indigo Colors
 Example:
 ```scss
 /**
@@ -344,11 +344,11 @@ $indigo: (
   
 </details>
 
+## 📚 Blue Colors
 <details>
   <summary>Show Blue Colors</summary>
 
 
-  ## 📚 Blue Colors
 Example:
 ```scss
 /**
@@ -374,10 +374,10 @@ $blue: (
 </details>
 
 
+## 📚 Light Blue Colors
 <details>
   <summary>Show Light Blue Colors</summary>
 
-## 📚 Light Blue Colors
 Example:
 ```scss
 /**
@@ -403,10 +403,10 @@ $light-blue: (
   
 </details>
 
+## 📚 Cyan Colors
 <details>
   <summary>Show Cyan Colors</summary>
 
-## 📚 Cyan Colors
 Example:
 ```scss
 /**
@@ -435,10 +435,10 @@ $cyan: (
 
 
 
+## 📚 Teal Colors
 <details>
   <summary>Show Teal Colors</summary>
 
-  ## 📚 Teal Colors
 Example:
 ```scss
 /**
@@ -463,10 +463,10 @@ $teal: (
 ```
 </details>
 
+## 📚 Green Colors
 <details>
   <summary>Show Green Colors</summary>
 
-  ## 📚 Green Colors
 Example:
 ```scss
 /**
@@ -491,10 +491,10 @@ $green: (
 ```
 </details>
 
+## 📚 Light Green Colors
 <details>
   <summary>Show Light Green Colors</summary>
 
-## 📚 Light Green Colors
 Example:
 ```scss
 /**
@@ -520,10 +520,10 @@ $light-green: (
   
 </details>
 
+## 📚 Lime Colors
 <details>
   <summary>Show Lime Colors</summary>
 
-## 📚 Lime Colors
 Example:
 ```scss
 /**
@@ -550,10 +550,10 @@ $lime: (
 </details>
 
 
+## 📚 Yellow Colors
 <details>
   <summary>Show Yellow Colors</summary>
 
-## 📚 Yellow Colors
 Example:
 ```scss
 /**
@@ -580,10 +580,10 @@ $yellow: (
   
 </details>
 
+## 📚 Amber Colors
 <details>
   <summary>Show Amber Colors</summary>
 
-## 📚 Amber Colors
 Example:
 ```scss
 /**
@@ -610,10 +610,10 @@ $amber: (
 </details>
 
 
+## 📚 Orange Colors
 <details>
   <summary>Show Orange Colors</summary>
   
-  ## 📚 Orange Colors
 Example:
 ```scss
 /**
@@ -639,10 +639,10 @@ $orange: (
 </details>
 
 
+## 📚 Deep Orange Colors
 <details>
   <summary>Show Deep Orange Colors</summary>
 
-  ## 📚 Deep Orange Colors
 Example:
 ```scss
 /**
@@ -668,10 +668,10 @@ $deep-orange: (
 </details>
 
 
+## 📚 Brown Colors
 <details>
   <summary>Show Brown Colors</summary>
 
-## 📚 Brown Colors
 Example:
 ```scss
 /**
@@ -692,10 +692,10 @@ $brown: (
 ```
 </details>
 
+## 📚 Blue Grey Colors
 <details>
   <summary>Show Blue Grey Colors</summary>
 
-## 📚 Blue Grey Colors
 Example:
 ```scss
 /**
@@ -717,10 +717,10 @@ $blue-grey: (
 </details>
 
 
+## 📚 Grey Colors
 <details>
   <summary>Show Grey Colors</summary>
 
-## 📚 Grey Colors
 Example:
 ```scss
 /**
@@ -742,10 +742,10 @@ $grey: (
 </details>
 
 
+## 📚 Shades Colors
 <details>
   <summary>Show Shades Colors</summary>
 
-## 📚 Shades Colors
 Example:
 ```scss
 /**
