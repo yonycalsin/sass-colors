@@ -28,7 +28,7 @@
 - 📘 [Documentation](#-documentation)
 - 💬 [Description](#-description)
 - 🐦 [Installation](#-installation)
-- 💬 [Description](#-getting-started)
+- ▶️ [Getting started](#-Getting-started)
 - 🎨 [Colors](#-colors)
   - 🔴 [Deep Red](#-deep-red-colors)
   - 🔴 [Red](#-red-colors)
