@@ -1,6 +1,4 @@
-/**
-*  Deep Red Colors
-**/
+// Deep Red Colors
 $deep-red: (
   "base":       #e51c23,
   "lighten-5":  #fdeaeb,
@@ -14,9 +12,7 @@ $deep-red: (
   "darken-4":   #8b1014,
 );
 
-/**
-*  Red Colors
-**/
+// Red Colors
 $red: (
   "base":       #F44336,
   "lighten-5":  #FFEBEE,
@@ -34,10 +30,7 @@ $red: (
   "accent-4":    #D50000,
 );
 
-
-/**
-*  Pink Colors
-**/
+// Pink Colors
 $pink: (
   "base":       #e91e63,
   "lighten-5":  #fce4ec,
@@ -55,9 +48,7 @@ $pink: (
   "accent-4":    #c51162,
 );
 
-/**
-*  Purple Colors
-**/
+// Purple Colors
 $purple: (
   "base":       #9c27b0,
   "lighten-5":  #f3e5f5,
@@ -75,9 +66,7 @@ $purple: (
   "accent-4":    #aa00ff,
 );
 
-/**
-*  Deep Purple Colors
-**/
+// Deep Purple Colors
 $deep-purple: (
   "base":       #673ab7,
   "lighten-5":  #ede7f6,
@@ -95,9 +84,7 @@ $deep-purple: (
   "accent-4":    #6200ea,
 );
 
-/**
-*  Indigo Colors
-**/
+// Indigo Colors
 $indigo: (
   "base":       #3f51b5,
   "lighten-5":  #e8eaf6,
@@ -115,9 +102,7 @@ $indigo: (
   "accent-4":    #304ffe,
 );
 
-/**
-*  Blue Colors
-**/
+// Blue Colors
 $blue: (
   "base":       #2196F3,
   "lighten-5":  #E3F2FD,
@@ -135,9 +120,7 @@ $blue: (
   "accent-4":    #2962FF,
 );
 
-/**
-*  Light Blue Colors
-**/
+// Light Blue Colors
 $light-blue: (
   "base":       #03a9f4,
   "lighten-5":  #e1f5fe,
@@ -155,9 +138,7 @@ $light-blue: (
   "accent-4":    #0091ea,
 );
 
-/**
-*  Cyan Colors
-**/
+// Cyan Colors
 $cyan: (
   "base":       #00bcd4,
   "lighten-5":  #e0f7fa,
@@ -175,9 +156,7 @@ $cyan: (
   "accent-4":    #00b8d4,
 );
 
-/**
-*  Teal Colors
-**/
+// Teal Colors
 $teal: (
   "base":       #009688,
   "lighten-5":  #e0f2f1,
@@ -195,9 +174,7 @@ $teal: (
   "accent-4":    #00bfa5,
 );
 
-/**
-*  Green Colors
-**/
+// Green Colors
 $green: (
   "base":       #4CAF50,
   "lighten-5":  #E8F5E9,
@@ -215,9 +192,7 @@ $green: (
   "accent-4":    #00C853,
 );
 
-/**
-*  Light Green Colors
-**/
+// Light Green Colors
 $light-green: (
   "base":       #8bc34a,
   "lighten-5":  #f1f8e9,
@@ -235,9 +210,7 @@ $light-green: (
   "accent-4":    #64dd17,
 );
 
-/**
-*  Lime Colors
-**/
+// Lime Colors
 $lime: (
   "base":       #cddc39,
   "lighten-5":  #f9fbe7,
@@ -255,9 +228,7 @@ $lime: (
   "accent-4":    #aeea00,
 );
 
-/**
-*  Yellow Colors
-**/
+// Yellow Colors
 $yellow: (
   "base":       #ffeb3b,
   "lighten-5":  #fffde7,
@@ -275,9 +246,7 @@ $yellow: (
   "accent-4":    #ffd600,
 );
 
-/**
-*  Amber Colors
-**/
+// Amber Colors
 $amber: (
   "base":       #ffc107,
   "lighten-5":  #fff8e1,
@@ -295,9 +264,7 @@ $amber: (
   "accent-4":    #ffab00,
 );
 
-/**
-*  Orange Colors
-**/
+// Orange Colors
 $orange: (
   "base":       #ff9800,
   "lighten-5":  #fff3e0,
@@ -315,9 +282,7 @@ $orange: (
   "accent-4":    #ff6d00,
 );
 
-/**
-*  Deep Orange Colors
-**/
+// Deep Orange Colors
 $deep-orange: (
   "base":       #ff5722,
   "lighten-5":  #fbe9e7,
@@ -335,9 +300,7 @@ $deep-orange: (
   "accent-4":    #dd2c00,
 );
 
-/**
-*  Brown Colors
-**/
+// Brown Colors
 $brown: (
   "base":       #795548,
   "lighten-5":  #efebe9,
@@ -351,9 +314,7 @@ $brown: (
   "darken-4":   #3e2723,
 );
 
-/**
-*  Blue Grey Colors
-**/
+// Blue Grey Colors
 $blue-grey: (
   "base":       #607d8b,
   "lighten-5":  #eceff1,
@@ -367,9 +328,7 @@ $blue-grey: (
   "darken-4":   #263238,
 );
 
-/**
-*  Grey Colors
-**/
+// Grey Colors
 $grey: (
   "base":       #9e9e9e,
   "lighten-5":  #fafafa,
@@ -383,18 +342,14 @@ $grey: (
   "darken-4":   #212121,
 );
 
-/**
-*  Shades Colors
-**/
+// Shades Colors
 $shades: (
   "black":        #000000,
   "white":        #FFFFFF,
   "transparent":  transparent
 );
 
-/**
-*  All Colors
-**/
+// All Colors
 $colors: (
   "deep-red": $deep-red,
   "red": $red,
