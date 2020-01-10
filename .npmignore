@@ -1,4 +1,8 @@
+.all-contributorsrc
+.gitignore
+.npmignore
+.npmrc
 docs
 docs-inc
 node_modules
-YONI
+.cb
