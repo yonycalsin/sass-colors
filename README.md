@@ -20,8 +20,8 @@
    <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
    <a href="https://github.com/yoicalsin/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass.colors-yellow?style=flat-square&logo=github" /></a>
    <a href="https://github.com/yoicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
-   <a href="https://twitter.com/yonicalsin" target="_blank">
-   <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
+   <a href="https://twitter.com/yoicalsin" target="_blank">
+   <img src="https://img.shields.io/twitter/follow/yoicalsin.svg?style=social&label=Follow"></a>
 </p>
 
 -  🔨 [Demo](#-demo)
@@ -809,7 +809,7 @@ Sass-colors is an open source project licensed by [MIT](LICENSE). You can grow t
 ## 🎩 Stay in touch
 
 -  Author [Yoni Calsin](https://github.com/yoicalsin)
--  Twitter [Yoni Calsin](https://twitter.com/yonicalsin)
+-  Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
 
 ## Contributors ✨
 
@@ -820,7 +820,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://twitter.com/yonicalsin"><img src="https://avatars0.githubusercontent.com/u/58490737?v=4" width="70px;" alt=""/><br /><sub><b>Yoni Calsin</b></sub></a><br /><a href="https://github.com/sass-colors/sass-colors/commits?author=yoicalsin" title="Code">💻</a> <a href="https://github.com/sass-colors/sass-colors/issues?q=author%3Ayoicalsin" title="Bug reports">🐛</a> <a href="https://github.com/sass-colors/sass-colors/commits?author=yoicalsin" title="Documentation">📖</a> <a href="#blog-yoicalsin" title="Blogposts">📝</a></td>
+    <td align="center"><a href="https://twitter.com/yoicalsin"><img src="https://avatars0.githubusercontent.com/u/58490737?v=4" width="70px;" alt=""/><br /><sub><b>Yoni Calsin</b></sub></a><br /><a href="https://github.com/sass-colors/sass-colors/commits?author=yoicalsin" title="Code">💻</a> <a href="https://github.com/sass-colors/sass-colors/issues?q=author%3Ayoicalsin" title="Bug reports">🐛</a> <a href="https://github.com/sass-colors/sass-colors/commits?author=yoicalsin" title="Documentation">📖</a> <a href="#blog-yoicalsin" title="Blogposts">📝</a></td>
   </tr>
 </table>
 
