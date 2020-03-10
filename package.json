@@ -32,7 +32,6 @@
       "url": "https://github.com/yonicb/sass-colors"
    },
    "devDependencies": {
-      "@types/node": "^12.12.17",
       "node-sass": "^4.13.0"
    }
 }
