@@ -7,3 +7,4 @@ docs
 docs-inc
 node_modules
 .cb
+renovate.json
