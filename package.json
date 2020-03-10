@@ -29,7 +29,7 @@
    "license": "MIT",
    "repository": {
       "type": "git",
-      "url": "https://github.com/yonicb/sass-colors"
+      "url": "https://github.com/yoicalsin/sass-colors"
    },
    "devDependencies": {
       "node-sass": "^4.13.1"
