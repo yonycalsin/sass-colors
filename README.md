@@ -95,10 +95,10 @@ To use the beautiful colors of sass-colors is very simple, first we will import 
 
 ```scss
 // If you use nodejs, reactjs, vuejs or angular
-@import 'node_modules/sass-colors/src/colors.scss';
+@import '~sass-colors';
 
 // You can also download it directly and import the file colors.scss, as follows
-@import 'src/colors.scss';
+@import 'index.scss';
 
 // usage: color("name_of_color", "type_of_color")
 // to avoid to repeating map-get($colors, ...)
@@ -110,7 +110,7 @@ Sass-Colors includes a function that adds selection a color and its secondary co
 </p>
 
 ```scss
-@import 'src/colors.scss';
+@import '~sass-colors';
 
 body {
    // First parameter receives the name of the main color, and as a second parameter requires the name of the secondary color
