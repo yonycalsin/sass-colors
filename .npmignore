@@ -1,10 +1,13 @@
-.vscode
-.all-contributorsrc
-.gitignore
+# folders
+/.vscode
+/docs
+/docs-inc
+/node_modules
+
+# Files
 .npmignore
 .npmrc
-docs
-docs-inc
-node_modules
-.cb
+.all-contributorsrc
+.gitignore
+.prettierrc.js
 renovate.json
