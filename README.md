@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/yoicalsin/sass-colors" target="blank"><img src="https://i.ibb.co/b596wMs/sass-colors.png" width="120" alt="Sass-colors Logo" /></a>
+  <a href="https://github.com/yonicalsin/sass-colors" target="blank"><img src="https://i.ibb.co/b596wMs/sass-colors.png" width="120" alt="Sass-colors Logo" /></a>
 </p>
 
 <p align="center">
@@ -7,21 +7,21 @@
 </p>
 <p align="center" style="max-width: 450px; margin: auto;">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-   <a href="https://github.com/yoicalsin/sass-colors" title="All Contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" /></a>
+   <a href="https://github.com/yonicalsin/sass-colors" title="All Contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-   <a href="https://github.com/yoicalsin/sass-colors"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
+   <a href="https://github.com/yonicalsin/sass-colors"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
    <a href="https://www.npmjs.com/sass-colors" target="_blank">
    <img src="https://img.shields.io/npm/v/sass-colors" alt="NPM Version" /></a>
    <a href="https://www.npmjs.com/sass-colors" target="_blank">
    <img src="https://img.shields.io/npm/l/sass-colors" alt="Package License" /></a>
    <a href="https://www.npmjs.com/sass-colors" target="_blank">
    <img src="https://img.shields.io/npm/dm/sass-colors" alt="NPM Downloads" /></a>
-   <a href="https://github.com/yoicalsin/sass-colors" target="_blank">
+   <a href="https://github.com/yonicalsin/sass-colors" target="_blank">
    <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
-   <a href="https://github.com/yoicalsin/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass.colors-yellow?style=flat-square&logo=github" /></a>
-   <a href="https://github.com/yoicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
-   <a href="https://twitter.com/yoicalsin" target="_blank">
-   <img src="https://img.shields.io/twitter/follow/yoicalsin.svg?style=social&label=Follow"></a>
+   <a href="https://github.com/yonicalsin/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass.colors-yellow?style=flat-square&logo=github" /></a>
+   <a href="https://github.com/yonicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
+   <a href="https://twitter.com/yonicalsin" target="_blank">
+   <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
 </p>
 
 -  🔨 [Demo](#-demo)
@@ -58,13 +58,13 @@
 ## 🎉 Demo
 
 <p>
-Preview live <a href="https://yoicalsin.github.io/sass-colors/" target="_blank">Click Here</a>
+Preview live <a href="https://yonicalsin.github.io/sass-colors/" target="_blank">Click Here</a>
 </p>
 
 ### 📚 Documentation
 
 <p>
-Go to documentation <a href="https://yoicalsin.github.io/sass-colors/" target="_blank">Click Here</a>
+Go to documentation <a href="https://yonicalsin.github.io/sass-colors/" target="_blank">Click Here</a>
 </p>
 
 ## 🌐 Description
@@ -804,33 +804,19 @@ $shades: (
 
 ## ⭐ Support for
 
-Sass-colors is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyoicalsin@gmail.com).
+`sass-colors` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
 
 ## 🎩 Stay in touch
 
--  Author [Yoni Calsin](https://github.com/yoicalsin)
--  Twitter [Yoni Calsin](https://twitter.com/yoicalsin)
+-  Github [@yonicalsin](https://github.com/yonicalsin)
+-  Twitter [@yonicalsin](https://twitter.com/yonicalsin)
+-  Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
+-  Medium [@yonicalsin](https://medium.com/yonicalsin)
 
-## Contributors ✨
+## Contributors
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tr>
-    <td align="center"><a href="https://twitter.com/yoicalsin"><img src="https://avatars0.githubusercontent.com/u/58490737?v=4" width="70px;" alt=""/><br /><sub><b>Yoni Calsin</b></sub></a><br /><a href="https://github.com/sass-colors/sass-colors/commits?author=yoicalsin" title="Code">💻</a> <a href="https://github.com/sass-colors/sass-colors/issues?q=author%3Ayoicalsin" title="Bug reports">🐛</a> <a href="https://github.com/sass-colors/sass-colors/commits?author=yoicalsin" title="Documentation">📖</a> <a href="#blog-yoicalsin" title="Blogposts">📝</a></td>
-  </tr>
-</table>
-
-<!-- markdownlint-enable -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+Thanks to the wonderful people who collaborate with me !
 
 ## 📜 License
 
-Sass-colors is [MIT licensed](LICENSE).
+`sass-colors` under [License MIT.](LICENSE)
