@@ -1,6 +1,6 @@
 {
    "name": "sass-colors",
-   "version": "1.0.11",
+   "version": "1.0.12",
    "description": "🎨 Sass-colors 🌐 is a scss library, which adds modern colors.",
    "main": "index.scss",
    "scripts": {
@@ -29,7 +29,7 @@
    "license": "MIT",
    "repository": {
       "type": "git",
-      "url": "https://github.com/yoicalsin/sass-colors"
+      "url": "https://github.com/yonicalsin/sass-colors"
    },
    "devDependencies": {
       "node-sass": "^4.13.1"
