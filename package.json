@@ -1,6 +1,6 @@
 {
    "name": "sass-colors",
-   "version": "1.0.12",
+   "version": "1.0.13",
    "description": "🎨 Sass-colors 🌐 is a scss library, which adds modern colors.",
    "main": "index.scss",
    "scripts": {
