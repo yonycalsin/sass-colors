@@ -1,11 +1,12 @@
-$enable-header-sass-colors: true;
+$sass-colors-header: true !default;
+$sass-colors-base: 'base' !default;
 
-@if $enable-header-sass-colors {
+@if $sass-colors-header {
    /*!
-   * Sass-Colors v1.0.11 (https://github.com/yoicalsin/sass-colors)
-   * Copyright 2019 The Sass Colors Authors
-   * Copyright 2019 Yoni Calsin.
-   * Licensed under MIT (https://github.com/yoicalsin/sass-colors/blob/master/LICENSE)
+   * Sass-Colors v1.0.13 (https://github.com/yonicalsin/sass-colors)
+   * Copyright 2019 - 2020 The Sass Colors Authors
+   * Copyright 2019 - 2020 Yoni Calsin.
+   * Licensed under MIT (https://github.com/yonicalsin/sass-colors/blob/master/LICENSE)
    */
 }
 
@@ -388,13 +389,7 @@ $colors: (
 // usage: color("name_of_color", "type_of_color")
 // to avoid to repeating map-get($colors, ...)
 
-@function color($color, $type) {
-   @if variable-exists($type) {
-      // Empty
-   } @else {
-      $type: 'base';
-   }
-
+@function color($color, $type: $sass-colors-base) {
    @if map-has-key($colors, $color) {
       $curr_color: map-get($colors, $color);
 
