@@ -4,7 +4,8 @@
    "description": "🎨 Sass-colors 🌐 is a scss library, which adds modern colors.",
    "main": "index.scss",
    "scripts": {
-      "dev": "node-sass --watch docs-inc -o docs --output-style compressed"
+      "dev": "node-sass --watch docs-inc -o docs --output-style compressed",
+      "clean": "rimraf ./**/*.{html,css}"
    },
    "keywords": [
       "sass-colors",
@@ -32,6 +33,7 @@
       "url": "https://github.com/yonicalsin/sass-colors"
    },
    "devDependencies": {
-      "node-sass": "^4.14.1"
+      "node-sass": "^4.14.1",
+      "rimraf": "^3.0.2"
    }
 }
