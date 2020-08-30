@@ -1,6 +1,6 @@
 {
    "name": "sass-colors",
-   "version": "1.0.13",
+   "version": "1.0.14",
    "description": "🎨 Sass-colors 🌐 is a scss library, which adds modern colors.",
    "main": "index.scss",
    "scripts": {
@@ -26,14 +26,12 @@
       "color-helpers",
       "helpers"
    ],
-   "author": "Yoni Calsin <helloyonicb@gmail.com>",
+   "author": "Yony Calsin",
    "license": "MIT",
-   "repository": {
-      "type": "git",
-      "url": "https://github.com/yonicalsin/sass-colors"
-   },
+   "repository": "https://github.com/yonycalsin/sass-colors",
    "devDependencies": {
       "node-sass": "^4.14.1",
       "rimraf": "^3.0.2"
-   }
+   },
+   "private": false
 }

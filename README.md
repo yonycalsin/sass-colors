@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/yonicalsin/sass-colors" target="blank"><img src="https://i.ibb.co/b596wMs/sass-colors.png" width="120" alt="Sass-colors Logo" /></a>
+  <a href="https://github.com/yonycalsin/sass-colors" target="blank"><img src="https://i.ibb.co/b596wMs/sass-colors.png" width="120" alt="Sass-colors Logo" /></a>
 </p>
 
 <p align="center">
@@ -7,21 +7,21 @@
 </p>
 <p align="center" style="max-width: 450px; margin: auto;">
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-   <a href="https://github.com/yonicalsin/sass-colors" title="All Contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" /></a>
+   <a href="https://github.com/yonycalsin/sass-colors" title="All Contributors"><img src="https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square" /></a>
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-   <a href="https://github.com/yonicalsin/sass-colors"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
+   <a href="https://github.com/yonycalsin/sass-colors"><img src="https://img.shields.io/spiget/stars/1000?color=brightgreen&label=Star&logo=github" /></a>
    <a href="https://www.npmjs.com/sass-colors" target="_blank">
    <img src="https://img.shields.io/npm/v/sass-colors" alt="NPM Version" /></a>
    <a href="https://www.npmjs.com/sass-colors" target="_blank">
    <img src="https://img.shields.io/npm/l/sass-colors" alt="Package License" /></a>
    <a href="https://www.npmjs.com/sass-colors" target="_blank">
    <img src="https://img.shields.io/npm/dm/sass-colors" alt="NPM Downloads" /></a>
-   <a href="https://github.com/yonicalsin/sass-colors" target="_blank">
+   <a href="https://github.com/yonycalsin/sass-colors" target="_blank">
    <img src="https://s3.amazonaws.com/assets.coveralls.io/badges/coveralls_95.svg" alt="Coverage" /></a>
-   <a href="https://github.com/yonicalsin/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass.colors-yellow?style=flat-square&logo=github" /></a>
-   <a href="https://github.com/yonicalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
-   <a href="https://twitter.com/yonicalsin" target="_blank">
-   <img src="https://img.shields.io/twitter/follow/yonicalsin.svg?style=social&label=Follow"></a>
+   <a href="https://github.com/yonycalsin/sass-colors"><img src="https://img.shields.io/badge/Github%20Page-sass.colors-yellow?style=flat-square&logo=github" /></a>
+   <a href="https://github.com/yonycalsin"><img src="https://img.shields.io/badge/Author-Yoni%20Calsin-blueviolet?style=flat-square&logo=appveyor" /></a>
+   <a href="https://twitter.com/yonycalsin" target="_blank">
+   <img src="https://img.shields.io/twitter/follow/yonycalsin.svg?style=social&label=Follow"></a>
 </p>
 
 -  🔨 [Demo](#-demo)
@@ -58,13 +58,13 @@
 ## 🎉 Demo
 
 <p>
-Preview live <a href="https://yonicalsin.github.io/sass-colors/" target="_blank">Click Here</a>
+Preview live <a href="https://yonycalsin.github.io/sass-colors/" target="_blank">Click Here</a>
 </p>
 
 ### 📚 Documentation
 
 <p>
-Go to documentation <a href="https://yonicalsin.github.io/sass-colors/" target="_blank">Click Here</a>
+Go to documentation <a href="https://yonycalsin.github.io/sass-colors/" target="_blank">Click Here</a>
 </p>
 
 ## 🌐 Description
@@ -804,14 +804,14 @@ $shades: (
 
 ## ⭐ Support for
 
-`sass-colors` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
+`sass-colors` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](https://twitter.com/yonycalsin).
 
 ## 🎩 Stay in touch
 
--  Github [@yonicalsin](https://github.com/yonicalsin)
--  Twitter [@yonicalsin](https://twitter.com/yonicalsin)
--  Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
--  Medium [@yonicalsin](https://medium.com/yonicalsin)
+-  Github [@yonycalsin](https://github.com/yonycalsin)
+-  Twitter [@yonycalsin](https://twitter.com/yonycalsin)
+-  Instagram [@yony_calsin](https://instagram.com/yony_calsin)
+-  Medium [@yonycalsin](https://medium.com/yonycalsin)
 
 ## Contributors
 
