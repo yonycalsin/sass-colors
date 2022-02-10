@@ -30,7 +30,7 @@
    "license": "MIT",
    "repository": "https://github.com/yonycalsin/sass-colors",
    "devDependencies": {
-      "node-sass": "^4.14.1",
+      "node-sass": "^7.0.0",
       "rimraf": "^3.0.2"
    },
    "private": false
